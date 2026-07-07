@@ -11,12 +11,12 @@ de la materia: el [programa](programa.qmd), las [lecturas](bibliografia.qmd) y, 
 clase, las notebooks (en Python y en R), las presentaciones y las referencias de cada tema.
 
 ::: {.callout-tip}
-## Cómo usar este sitio
+## Cómo usar este sitio web
 
 - **Para leer:** cada clase tiene su página con la notebook renderizada, para consultar
-  desde cualquier dispositivo sin instalar nada.
-- **Para correr:** cada notebook tiene un botón **"Open in Colab"** que la abre lista
-  para ejecutar en Google Colab (Python o R). No hace falta instalar nada en tu máquina.
+  desde cualquier dispositivo sin instalar nada ni correr ningún código.
+- **Para correr código:** cada notebook tiene un botón **"Open in Colab"** que la abre lista
+  para ejecutar en Google Colab (Python o R). No hace falta instalar nada en tu computadora.
 :::
 
 ## La materia en una línea
