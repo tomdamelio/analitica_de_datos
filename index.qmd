@@ -4,6 +4,8 @@ subtitle: "Maestría en Ciencias del Comportamiento, Universidad de San Andrés,
 toc: false
 ---
 
+![](images/portada.png){.portada fig-alt="Ilustración isométrica de un proyecto de ciencia de datos: personas trabajando con laptops, gráficos, dispositivos y un cohete despegando."}
+
 Bienvenidos/as al sitio de **Analítica de Datos**. Acá vas a encontrar todo el material
 de la materia: el programa, las lecturas y, para cada clase, las notebooks (en Python
 y en R), las presentaciones y las referencias de cada tema.
