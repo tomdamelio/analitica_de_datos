@@ -5,8 +5,6 @@ subtitle: "Todas las lecturas de la materia, con enlace a su fuente oficial"
 
 ## Material principal (Python)
 
-Textos sobre los que se apoya el dictado. Todos gratuitos y oficiales.
-
 | Texto | Acceso | Se usa en |
 |---|---|---|
 | James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to Statistical Learning with Applications in Python* (**ISLP**). Springer. | [statlearning.com](https://www.statlearning.com/), PDF gratuito oficial | Clases 1, 4, 5, 6, 7, 9 y 10 |
