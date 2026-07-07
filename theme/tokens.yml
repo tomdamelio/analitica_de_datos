@@ -6,8 +6,12 @@
 # provea el branding UdeSA (logo + guía de color), actualizar AQUÍ y en
 # theme/udesa.scss, y regenerar las figuras de las notebooks si cambia la paleta.
 brand:
-  status: placeholder-navy    # cambiar a "oficial" cuando se aplique el branding real
-  logo: null                  # ruta al logo cuando exista (context/brand/ → copiar a theme/)
+  # primary CONFIRMADO oficial: coincide con el SVG del sitio de UdeSA
+  # (udesa.edu.ar/logo/logo-header.svg, fill #00529B). El acento terracota y la
+  # paleta de figuras siguen siendo eleccion de catedra (el logo oficial usa
+  # verde/rosa como secundarios); guia de marca completa aun pendiente.
+  status: primary-oficial-resto-catedra
+  logo: theme/udesa-logo-blanco.png   # version blanca del logo oficial (navbar -> Campus Virtual)
 
 color:
   primary: "#00529B"     # navy sobrio (nav, títulos, links)
