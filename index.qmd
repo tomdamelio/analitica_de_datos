@@ -37,7 +37,7 @@ segmentación, análisis de texto.
 | **IV** | 11–12 | Procesamiento de lenguaje natural con modelos de lenguaje |
 |  | 13–14 | Examen final, Presentación del trabajo integrador |
 
-## Python y R: dos caminos, el mismo análisis
+## Python 🤝 R
 
 La materia se dicta en **Python**, sin asumir conocimientos previos del lenguaje.
 Quienes vengan más cómodos/as con **R** tienen, para cada clase, una notebook R
