@@ -1,11 +1,11 @@
 ---
 title: "Analítica de Datos"
-subtitle: "Maestría en Ciencias del Comportamiento · Universidad de San Andrés · Primavera 2026"
+subtitle: "Maestría en Ciencias del Comportamiento, Universidad de San Andrés, Primavera 2026"
 toc: false
 ---
 
 Bienvenidos/as al sitio de **Analítica de Datos**. Acá vas a encontrar todo el material
-de la materia: el programa, las lecturas, y —clase por clase— las notebooks (en Python
+de la materia: el programa, las lecturas y, para cada clase, las notebooks (en Python
 y en R), las presentaciones y las referencias de cada tema.
 
 ::: {.callout-tip}
@@ -28,12 +28,12 @@ segmentación, análisis de texto.
 
 | Eje | Clases | Tema |
 |---|---|---|
-| — | 1 | Presentación, introducción al ML, puesta en marcha de Python y Colab |
+|  | 1 | Presentación, introducción al ML, puesta en marcha de Python y Colab |
 | **I** | 2–3 | Procesamiento y visualización de datos en Python |
 | **II** | 4–8 | Aprendizaje supervisado (regresión, regularización, clasificación, árboles y Random Forest, series temporales) |
 | **III** | 9–10 | Aprendizaje no supervisado (clustering, PCA) |
 | **IV** | 11–12 | Procesamiento de lenguaje natural con modelos de lenguaje |
-| — | 13–14 | Examen final · Presentación del trabajo integrador |
+|  | 13–14 | Examen final, Presentación del trabajo integrador |
 
 ## Python y R: dos caminos, el mismo análisis
 
@@ -51,7 +51,7 @@ equivalente y validada: mismo dataset, mismos pasos, mismas conclusiones.
 
 ## Equipo docente
 
-**Profesores:** Tomás Ariel D'Amelio · Nicolas Marcelo Bruno · Iair Embon · Tomás Gonzalez Garello
-**Asistentes/Tutores:** Agustín Diaz Barquinero · Jerónimo Cuello
+**Profesores:** Tomás Ariel D'Amelio, Nicolas Marcelo Bruno, Iair Embon, Tomás Gonzalez Garello
+**Asistentes/Tutores:** Agustín Diaz Barquinero, Jerónimo Cuello
 
 Contacto: [tdamelio@udesa.edu.ar](mailto:tdamelio@udesa.edu.ar)

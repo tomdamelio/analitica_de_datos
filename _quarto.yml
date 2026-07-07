@@ -13,7 +13,7 @@ lang: es
 
 website:
   title: "Analítica de Datos"
-  description: "Analítica de Datos — Maestría en Ciencias del Comportamiento, Universidad de San Andrés"
+  description: "Analítica de Datos, Maestría en Ciencias del Comportamiento, Universidad de San Andrés"
   navbar:
     background: primary
     search: true
@@ -27,13 +27,13 @@ website:
       - text: Clases
         menu:
           - href: clases/clase-02/index.qmd
-            text: "Clase 2 · Análisis exploratorio y procesamiento de datos"
+            text: "Clase 2: Análisis exploratorio y procesamiento de datos"
     right:
       # Logo UdeSA en blanco (derivado del SVG oficial; ver theme/) -> Campus Virtual
       - text: '<img src="/theme/udesa-logo-blanco.png" alt="Campus Virtual UdeSA" style="height:24px; vertical-align:middle;">'
         href: "http://campusvirtual.udesa.edu.ar"
   page-footer:
-    left: "Analítica de Datos · Maestría en Ciencias del Comportamiento · UdeSA · Primavera 2026"
+    left: "Analítica de Datos, Maestría en Ciencias del Comportamiento, UdeSA, Primavera 2026"
     right: "Hecho con [Quarto](https://quarto.org)"
 
 format:

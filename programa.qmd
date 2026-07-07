@@ -1,6 +1,6 @@
 ---
 title: "Programa"
-subtitle: "Analítica de Datos · Primavera 2026"
+subtitle: "Analítica de Datos, Primavera 2026"
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Clase 2: Análisis exploratorio y procesamiento de datos"
-subtitle: "Eje I · Procesamiento y visualización de datos en Python"
+subtitle: "Eje I: Procesamiento y visualización de datos en Python"
 ---
 
 ## Objetivo

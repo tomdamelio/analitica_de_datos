@@ -1,6 +1,6 @@
 # REPORT — Fase 1: Maquetado del curso + Clase 2 piloto
 
-**Fecha:** 2026-07-07 · **Parámetro de la corrida:** `COLAB_BASE = tomdamelio/analitica_de_datos/main`
+**Fecha:** 2026-07-07, **Parámetro de la corrida:** `COLAB_BASE = tomdamelio/analitica_de_datos/main`
 
 ---
 
