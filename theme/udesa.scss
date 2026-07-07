@@ -67,11 +67,18 @@ img[alt="Open in Colab"] {
   border-left-color: $accent;
 }
 
-// Imagen de portada del home
+// Imagen de portada del home, pegada al subtitulo (margen casi nulo arriba).
+// Se scopea al home via :has() para no afectar el espaciado de otras paginas.
+#title-block-header:has(~ p .portada) {
+  margin-bottom: 0.15rem;
+}
+p:has(> .portada) {
+  margin: 0;
+}
 .portada {
   display: block;
   width: 100%;
   max-width: 760px;
   height: auto;
-  margin: 1.2rem auto 2rem;
+  margin: 0 auto 1.5rem;
 }

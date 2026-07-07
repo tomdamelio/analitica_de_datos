@@ -7,8 +7,8 @@ toc: false
 ![](images/portada.png){.portada fig-alt="Ilustración isométrica de un proyecto de ciencia de datos: personas trabajando con laptops, gráficos, dispositivos y un cohete despegando."}
 
 Bienvenidos/as al sitio de **Analítica de Datos**. Acá vas a encontrar todo el material
-de la materia: el programa, las lecturas y, para cada clase, las notebooks (en Python
-y en R), las presentaciones y las referencias de cada tema.
+de la materia: el [programa](programa.qmd), las [lecturas](bibliografia.qmd) y, para cada
+clase, las notebooks (en Python y en R), las presentaciones y las referencias de cada tema.
 
 ::: {.callout-tip}
 ## Cómo usar este sitio
@@ -53,7 +53,14 @@ equivalente y validada: mismo dataset, mismos pasos, mismas conclusiones.
 
 ## Equipo docente
 
-**Profesores:** Tomás Ariel D'Amelio, Nicolas Marcelo Bruno, Iair Embon, Tomás Gonzalez Garello
-**Asistentes/Tutores:** Agustín Diaz Barquinero, Jerónimo Cuello
+**Profesores:**
 
-Contacto: [tdamelio@udesa.edu.ar](mailto:tdamelio@udesa.edu.ar)
+- Tomás Ariel D'Amelio ([tdamelio@udesa.edu.ar](mailto:tdamelio@udesa.edu.ar))
+- Nicolas Marcelo Bruno ([nicobruno92@gmail.com](mailto:nicobruno92@gmail.com))
+- Iair Embon ([iembon@udesa.edu.ar](mailto:iembon@udesa.edu.ar))
+- Tomás Gonzalez Garello ([tomas21.gg@gmail.com](mailto:tomas21.gg@gmail.com))
+
+**Asistentes/Tutores:**
+
+- Agustín Diaz Barquinero ([agustindiazbarquinero@gmail.com](mailto:agustindiazbarquinero@gmail.com))
+- Jerónimo Cuello ([jerorodriguezcuello231@gmail.com](mailto:jerorodriguezcuello231@gmail.com))

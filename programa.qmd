@@ -3,23 +3,6 @@ title: "Programa"
 subtitle: "Analítica de Datos, Primavera 2026"
 ---
 
-
-**Primavera 2026**
-
-**Profesores:**
-
-- Tomás Ariel D'Amelio ([tdamelio@udesa.edu.ar](mailto:tdamelio@udesa.edu.ar))
-- Nicolas Marcelo Bruno ([nicobruno92@gmail.com](mailto:nicobruno92@gmail.com))
-- Iair Embon ([iembon@udesa.edu.ar](mailto:iembon@udesa.edu.ar))
-- Tomás Gonzalez Garello ([tomas21.gg@gmail.com](mailto:tomas21.gg@gmail.com))
-
-**Asistentes/Tutores:**
-
-- Agustín Diaz Barquinero ([agustindiazbarquinero@gmail.com](mailto:agustindiazbarquinero@gmail.com))
-- Jerónimo Cuello ([jerorodriguezcuello231@gmail.com](mailto:jerorodriguezcuello231@gmail.com))
-
----
-
 ## Objetivos de aprendizaje
 
 El objetivo de la materia es introducir a los/as estudiantes a los conceptos, metodologías y aplicaciones fundamentales del análisis de datos en las Ciencias del Comportamiento, con foco en aprendizaje automático (machine learning). Para ello, la materia se organizará en cuatro ejes principales que combinan teoría y práctica, permitiendo a los/as estudiantes aplicar los conocimientos adquiridos en contextos reales.
