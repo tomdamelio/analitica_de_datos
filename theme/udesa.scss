@@ -67,6 +67,78 @@ img[alt="Open in Colab"] {
   border-left-color: $accent;
 }
 
+// -------------------------------------------------------------------
+// Mapa del curso (pagina Programa): flujo vertical de ejes y clases
+// -------------------------------------------------------------------
+.mapa-curso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.2rem auto 2.5rem;
+}
+.mapa-curso .mapa-etapa {
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  border: 1px solid rgba(18, 37, 53, 0.12);
+  border-left: 6px solid var(--mapa-color, #{$primary});
+  border-radius: 10px;
+  padding: 0.75rem 1.05rem;
+  box-shadow: 0 1px 4px rgba(18, 37, 53, 0.08);
+}
+.mapa-curso .mapa-hito {
+  max-width: 480px;
+  text-align: center;
+  --mapa-color: #{$primary-dark};
+  background: $surface;
+}
+.mapa-curso .mapa-cab {
+  font-weight: 600;
+  color: var(--mapa-color, #{$primary});
+  margin-bottom: 0.4rem;
+  line-height: 1.25;
+}
+.mapa-curso .mapa-hito .mapa-cab {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7a86;
+  margin-bottom: 0.25rem;
+}
+.mapa-curso .mapa-clases {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.mapa-curso .mapa-hito .mapa-clases {
+  justify-content: center;
+}
+.mapa-curso .mapa-clases li {
+  background: rgba(18, 37, 53, 0.035);
+  border: 1px solid rgba(18, 37, 53, 0.12);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.mapa-curso .mapa-clases li b {
+  color: var(--mapa-color, #{$primary});
+  font-weight: 600;
+}
+.mapa-curso .mapa-flecha {
+  color: #b6c2cc;
+  font-size: 1.4rem;
+  line-height: 1;
+  margin: 0.2rem 0;
+}
+.mapa-curso .mapa-eje-1 { --mapa-color: #00529B; }
+.mapa-curso .mapa-eje-2 { --mapa-color: #C0492F; }
+.mapa-curso .mapa-eje-3 { --mapa-color: #1F7A4D; }
+.mapa-curso .mapa-eje-4 { --mapa-color: #6A4C93; }
+
 // Imagen de portada del home, pegada al subtitulo (margen casi nulo arriba).
 // Se scopea al home via :has() para no afectar el espaciado de otras paginas.
 #title-block-header:has(~ p .portada) {
