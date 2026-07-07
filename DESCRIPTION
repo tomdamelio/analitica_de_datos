@@ -1,0 +1,11 @@
+Package: analitica.de.datos
+Title: Analitica de Datos - UdeSA (dependencias R del material)
+Version: 0.1.0
+Description: Manifiesto de dependencias R para las notebooks del curso.
+    Validado con R 4.5.3. En Colab (runtime R) instalar solo lo que falte;
+    tidyverse ya viene preinstalado.
+Imports:
+    tidyverse,
+    skimr,
+    IRkernel
+Encoding: UTF-8

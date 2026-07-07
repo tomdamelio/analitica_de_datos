@@ -1,0 +1,98 @@
+# ---------------------------------------------------------------------------
+# Build + deploy del sitio a GitHub Pages.
+# ESTADO: listo pero inerte — el remoto todavía no existe. Al crear el repo:
+#   1. Settings → Pages → Source: "GitHub Actions".
+#   2. Push a main dispara este workflow.
+# Gracias a `freeze: auto`, el CI NO ejecuta código (ni Python ni R): publica
+# los outputs congelados en _freeze/ y las notebooks ya ejecutadas. Por eso
+# NO se instalan kernels acá.
+# ---------------------------------------------------------------------------
+name: Publicar sitio en GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.9.38
+
+      # Solo para el ipynb-filter (scripts/strip_scaffold_filter.py); las
+      # notebooks NO se ejecutan en CI.
+      - name: Instalar Python (requerido por el ipynb-filter)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render del sitio (freeze, sin ejecutar código)
+        run: quarto render
+
+      - name: Subir artefacto de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy a GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # ---------------------------------------------------------------------
+  # Espejo publico de notebooks. Este repo es PRIVADO y Colab solo abre
+  # notebooks de repos publicos: los badges apuntan al espejo
+  # tomdamelio/analitica-de-datos-notebooks, que este job sincroniza en
+  # cada push (solo las .ipynb; NUNCA data/ ni context/, por licencia y
+  # copyright). Setup unico (ver README):
+  #   1. Crear el repo publico analitica-de-datos-notebooks (vacio).
+  #   2. Crear un fine-grained PAT con permiso Contents: Read and write
+  #      SOLO sobre ese repo, y guardarlo como secret NOTEBOOKS_MIRROR_TOKEN.
+  # ---------------------------------------------------------------------
+  mirror-notebooks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preparar contenido del espejo
+        run: |
+          mkdir -p espejo
+          # Copia preservando rutas: los badges usan la MISMA ruta que aca
+          find clases -path "clases/*/notebooks/*.ipynb" -exec cp --parents {} espejo/ \;
+          cp scripts/mirror_README.md espejo/README.md
+
+      - name: Push al repo publico de notebooks
+        env:
+          TOKEN: ${{ secrets.NOTEBOOKS_MIRROR_TOKEN }}
+        run: |
+          cd espejo
+          git init -b main
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Espejo automatico de notebooks (${GITHUB_SHA::7})"
+          git push --force \
+            "https://x-access-token:${TOKEN}@github.com/tomdamelio/analitica-de-datos-notebooks.git" main

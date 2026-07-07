@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "clases/**/*.qmd"
+    - "clases/**/*.ipynb"
+    - "!context/"
+
+lang: es
+
+website:
+  title: "Analítica de Datos"
+  description: "Analítica de Datos — Maestría en Ciencias del Comportamiento, Universidad de San Andrés"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: programa.qmd
+        text: Programa
+      - href: bibliografia.qmd
+        text: Bibliografía
+      - text: Clases
+        menu:
+          - href: clases/clase-02/index.qmd
+            text: "Clase 2 · Análisis exploratorio y procesamiento de datos"
+  page-footer:
+    left: "Analítica de Datos · Maestría en Ciencias del Comportamiento · UdeSA · Primavera 2026"
+    right: "Hecho con [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - theme/udesa.scss
+    toc: true
+    toc-title: "En esta página"
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+
+execute:
+  freeze: auto
+
+# La metadata `scaffold` de las celdas solution (CONVENTIONS.md seccion 7) rompe
+# la serializacion de atributos de Quarto; este filtro la quita SOLO del render.
+# El .ipynb fuente no se modifica.
+ipynb-filters:
+  - scripts/strip_scaffold_filter.py

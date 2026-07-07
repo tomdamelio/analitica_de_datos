@@ -1,0 +1,57 @@
+---
+title: "Analítica de Datos"
+subtitle: "Maestría en Ciencias del Comportamiento · Universidad de San Andrés · Primavera 2026"
+toc: false
+---
+
+Bienvenidos/as al sitio de **Analítica de Datos**. Acá vas a encontrar todo el material
+de la materia: el programa, las lecturas, y —clase por clase— las notebooks (en Python
+y en R), las presentaciones y las referencias de cada tema.
+
+::: {.callout-tip}
+## Cómo usar este sitio
+
+- **Para leer:** cada clase tiene su página con la notebook renderizada, para consultar
+  desde cualquier dispositivo sin instalar nada.
+- **Para correr:** cada notebook tiene un botón **"Open in Colab"** que la abre lista
+  para ejecutar en Google Colab (Python o R). No hace falta instalar nada en tu máquina.
+:::
+
+## La materia en una línea
+
+Introducir los conceptos, metodologías y aplicaciones fundamentales del análisis de
+datos en las Ciencias del Comportamiento, con foco en **machine learning**, y con
+aplicaciones reales en cada clase: people analytics, predicción de turnover,
+segmentación, análisis de texto.
+
+## Recorrido
+
+| Eje | Clases | Tema |
+|---|---|---|
+| — | 1 | Presentación, introducción al ML, puesta en marcha de Python y Colab |
+| **I** | 2–3 | Procesamiento y visualización de datos en Python |
+| **II** | 4–8 | Aprendizaje supervisado (regresión, regularización, clasificación, árboles y Random Forest, series temporales) |
+| **III** | 9–10 | Aprendizaje no supervisado (clustering, PCA) |
+| **IV** | 11–12 | Procesamiento de lenguaje natural con modelos de lenguaje |
+| — | 13–14 | Examen final · Presentación del trabajo integrador |
+
+## Python y R: dos caminos, el mismo análisis
+
+La materia se dicta en **Python**, sin asumir conocimientos previos del lenguaje.
+Quienes vengan más cómodos/as con **R** tienen, para cada clase, una notebook R
+equivalente y validada: mismo dataset, mismos pasos, mismas conclusiones.
+
+## Cursada
+
+- **Cuándo:** sábados de 9:30 a 12:30 hs, del 8 de agosto al 7 de noviembre de 2026.
+- **Modalidad:** teórico-práctica, con comisión presencial y comisión virtual.
+- **Evaluación:** trabajo práctico integrador (50%) + examen final (50%). Asistencia mínima: 75%.
+- **Campus Virtual:** el cronograma y las entregas se gestionan en el
+  [Campus Virtual UdeSA](http://campusvirtual.udesa.edu.ar).
+
+## Equipo docente
+
+**Profesores:** Tomás Ariel D'Amelio · Nicolas Marcelo Bruno · Iair Embon · Tomás Gonzalez Garello
+**Asistentes/Tutores:** Agustín Diaz Barquinero · Jerónimo Cuello
+
+Contacto: [tdamelio@udesa.edu.ar](mailto:tdamelio@udesa.edu.ar)

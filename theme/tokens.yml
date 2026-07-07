@@ -1,0 +1,36 @@
+# ---------------------------------------------------------------------------
+# theme/tokens.yml — FUENTE ÚNICA DE VERDAD de paleta y tipografía
+# ---------------------------------------------------------------------------
+# ⚠️ ESTADO: PLACEHOLDER. No hay assets oficiales en context/brand/, así que se
+# usa un "navy sobrio" provisional (CONVENTIONS.md §11). Cuando la cátedra
+# provea el branding UdeSA (logo + guía de color), actualizar AQUÍ y en
+# theme/udesa.scss, y regenerar las figuras de las notebooks si cambia la paleta.
+brand:
+  status: placeholder-navy    # cambiar a "oficial" cuando se aplique el branding real
+  logo: null                  # ruta al logo cuando exista (context/brand/ → copiar a theme/)
+
+color:
+  primary: "#00529B"     # navy sobrio (nav, títulos, links)
+  primary-dark: "#122535"
+  accent: "#C0492F"      # terracota (acentos, hover)
+  text: "#212529"
+  background: "#FFFFFF"
+  surface: "#F5F7FA"     # fondos de bloques/callouts
+
+# Paleta categórica para FIGURAS (notebooks Python y R usan estos hex en orden).
+# Elegida sobria y distinguible; consistente entre lenguajes.
+figures:
+  palette:
+    - "#00529B"   # navy (serie principal)
+    - "#C0492F"   # terracota
+    - "#7E9EBB"   # azul apagado
+    - "#1F7A4D"   # verde
+    - "#B4232E"   # rojo
+    - "#9FB0BD"   # gris azulado
+  dpi: 150
+  style: "sobrio, sin chartjunk; el título es la conclusión"
+
+typography:
+  base: "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+  headings: "inherit"
+  code: "'Cascadia Code', 'Fira Code', Consolas, monospace"

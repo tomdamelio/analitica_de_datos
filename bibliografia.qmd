@@ -1,0 +1,46 @@
+---
+title: "Bibliografía"
+subtitle: "Todas las lecturas de la materia, con enlace a su fuente oficial"
+---
+
+::: {.callout-note}
+Este sitio **no aloja PDFs** de libros: cada texto se enlaza a su **fuente oficial**.
+Varios de los textos centrales son gratuitos y de acceso abierto, publicados así por
+sus propios autores/editoriales.
+:::
+
+## Material principal (Python)
+
+Textos sobre los que se apoya el dictado. Todos gratuitos y oficiales.
+
+| Texto | Acceso | Se usa en |
+|---|---|---|
+| James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to Statistical Learning with Applications in Python* (**ISLP**). Springer. | [statlearning.com](https://www.statlearning.com/) — PDF gratuito oficial | Clases 1, 4, 5, 6, 7, 9 y 10 |
+| McKinney, W. (2022). *Python for Data Analysis* (3ª ed.). O'Reilly. | [wesmckinney.com/book](https://wesmckinney.com/book/) — libro web gratuito | Clase 2 (caps. 5–7) |
+| Wilke, C. O. (2019). *Fundamentals of Data Visualization*. O'Reilly. | [clauswilke.com/dataviz](https://clauswilke.com/dataviz/) — libro web gratuito | Clase 3 (caps. 1–7, 21 y 22) |
+| Hyndman, R. J. & Athanasopoulos, G. (2021). *Forecasting: Principles and Practice* (3ª ed., **FPP3**). OTexts. | [otexts.com/fpp3](https://otexts.com/fpp3/) — libro web gratuito | Clase 8 (está escrito en R; el lado Python se trabaja con `statsmodels`) |
+
+## Material avanzado / opcional
+
+| Texto | Acceso | Se usa en |
+|---|---|---|
+| Hastie, T., Tibshirani, R. & Friedman, J. (2009). *The Elements of Statistical Learning* (2ª ed., **ESL**). Springer. | [hastie.su.domains/ElemStatLearn](https://hastie.su.domains/ElemStatLearn/) — PDF gratuito oficial | Clase 5 (cap. 6) y clase 7 (cap. 15), lectura avanzada |
+
+## Referencia en R
+
+Para quienes sigan la materia desde el lado R.
+
+| Texto | Acceso | Se usa en |
+|---|---|---|
+| Wickham, H. & Grolemund, G. (2017). *R para Ciencia de Datos* (edición en español). O'Reilly. | [es.r4ds.hadley.nz](https://es.r4ds.hadley.nz/) — libro web gratuito | Clase 2 (caps. 4–6) y como referencia general |
+| James, G., Witten, D., Hastie, T. & Tibshirani, R. (2021). *An Introduction to Statistical Learning with Applications in R* (2ª ed., **ISLR**). Springer. | [statlearning.com](https://www.statlearning.com/) — PDF gratuito oficial | Referencia R del arco supervisado (clases 4–7) |
+
+## Material comercial (complementario)
+
+No disponibles gratuitamente; se citan y se enlazan a la editorial. Su lectura es
+complementaria, no requisito.
+
+| Texto | Acceso | Se usa en |
+|---|---|---|
+| Knaflic, C. N. (2015). *Storytelling with Data: A Data Visualization Guide for Business Professionals*. Wiley. | [storytellingwithdata.com/books](https://www.storytellingwithdata.com/books) — sitio de la autora | Clase 3 (complementaria) |
+| Rokach, L. & Maimon, O. (2010). "Clustering Methods". En *Data Mining and Knowledge Discovery Handbook* (pp. 321–352). Springer. | [doi.org/10.1007/978-0-387-09823-4_15](https://doi.org/10.1007/978-0-387-09823-4_15) — DOI (paywall) | Clase 9 (complementaria) |

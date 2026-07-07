@@ -1,0 +1,64 @@
+---
+title: "Clase 2: Análisis exploratorio y procesamiento de datos"
+subtitle: "Eje I · Procesamiento y visualización de datos en Python"
+---
+
+## Objetivo
+
+Introducir los fundamentos de Python para el análisis de datos y explorar conceptos
+fundamentales del análisis exploratorio de datos en Python, articulando lo visto en
+Estadística e introduciendo prácticas específicas necesarias para proyectos de machine
+learning.
+
+## Contenidos
+
+- Importación y exportación de datos (CSV, Excel, parquet).
+- Exploración inicial: tipos de datos, estructuras comunes, estadísticos descriptivos.
+- Limpieza y procesamiento de datos con pandas: filtrar, seleccionar, modificar,
+  ordenar, renombrar, agrupar y resumir.
+- Manejo de datos atípicos (outliers) y valores faltantes (missing data).
+- Introducción a feature engineering: creación de variables derivadas con sentido
+  sustantivo.
+- Terminología: distinción operativa entre limpieza, procesamiento, preprocesamiento,
+  feature engineering y feature selection (ver [Apéndice del programa](../../programa.qmd#apéndice-glosario-de-terminología)).
+
+::: {.callout-note}
+## Fundamentos de Python, sin asumir nada
+
+Esta clase concentra el grueso de los fundamentos de Python (variables y tipos,
+listas y diccionarios, `for` y condicionales, funciones), incrustados en el trabajo
+de análisis sobre datos reales. No se asume Python previo.
+:::
+
+## Notebooks
+
+Trabajamos sobre el dataset **HR Employee Attrition** (people analytics: ¿quiénes dejan
+la empresa y por qué?). Ver [ficha del dataset](https://github.com/IBM/employee-attrition-aif360)
+(fuente: IBM).
+
+| Lenguaje | Leer en el sitio | Ejecutar en Colab |
+|---|---|---|
+| **Python** (principal) | [Notebook renderizada](notebooks/clase02_python.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]({{< var colab-root >}}/clases/clase-02/notebooks/clase02_python.ipynb) |
+| **R** (par validado) | [Notebook renderizada](notebooks/clase02_r.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]({{< var colab-root >}}/clases/clase-02/notebooks/clase02_r.ipynb) |
+
+::: {.callout-tip}
+Las dos notebooks recorren **el mismo análisis con las mismas conclusiones**: elegí el
+lenguaje en el que quieras trabajar. La versión Python es la del dictado; la versión R
+es material de referencia equivalente.
+:::
+
+## Slides
+
+*Disponibles próximamente.* <!-- PLACEHOLDER Fase 2: slides/clase02.pdf -->
+
+## Lecturas
+
+**Obligatoria:**
+
+- McKinney, W. (2022). *Python for Data Analysis* (3ª ed.), **capítulos 5 a 7**.
+  O'Reilly. [wesmckinney.com/book](https://wesmckinney.com/book/) (gratuito, oficial).
+
+**Complementaria (referencia en R):**
+
+- Wickham, H. & Grolemund, G. (2017). *R para Ciencia de Datos*, **capítulos 4 a 6**.
+  O'Reilly. [es.r4ds.hadley.nz](https://es.r4ds.hadley.nz/) (gratuito, en español).

@@ -1,0 +1,367 @@
+---
+title: "Programa"
+subtitle: "Analítica de Datos · Primavera 2026"
+---
+
+
+**Primavera 2026**
+
+**Profesores:**
+
+- Tomás Ariel D'Amelio ([tdamelio@udesa.edu.ar](mailto:tdamelio@udesa.edu.ar))
+- Nicolas Marcelo Bruno ([nicobruno92@gmail.com](mailto:nicobruno92@gmail.com))
+- Iair Embon ([iembon@udesa.edu.ar](mailto:iembon@udesa.edu.ar))
+- Tomás Gonzalez Garello ([tomas21.gg@gmail.com](mailto:tomas21.gg@gmail.com))
+
+**Asistentes/Tutores:**
+
+- Agustín Diaz Barquinero ([agustindiazbarquinero@gmail.com](mailto:agustindiazbarquinero@gmail.com))
+- Jerónimo Cuello ([jerorodriguezcuello231@gmail.com](mailto:jerorodriguezcuello231@gmail.com))
+
+---
+
+## Objetivos de aprendizaje
+
+El objetivo de la materia es introducir a los/as estudiantes a los conceptos, metodologías y aplicaciones fundamentales del análisis de datos en las Ciencias del Comportamiento, con foco en aprendizaje automático (machine learning). Para ello, la materia se organizará en cuatro ejes principales que combinan teoría y práctica, permitiendo a los/as estudiantes aplicar los conocimientos adquiridos en contextos reales.
+
+En la primera parte del curso (Eje I), los/as estudiantes se familiarizarán con el entorno de trabajo en Google Colab y con los fundamentos de Python necesarios para el análisis de datos (sin asumir conocimientos previos del lenguaje), consolidarán habilidades para el procesamiento exploratorio y la visualización de datos, articulando lo aprendido en Estadística para las Ciencias del Comportamiento con un enfoque más orientado al desarrollo de proyectos de datos.
+
+En la segunda parte del curso (Eje II), se impartirán conocimientos sobre aprendizaje supervisado, introduciendo técnicas como la regresión lineal con regularización, regresión logística, árboles de decisión y Random Forest. Los/as estudiantes aprenderán a evaluar modelos predictivos utilizando métricas clave como la sensibilidad, especificidad y el Área Bajo la Curva ROC (AUC), así como a distinguir objetivos predictivos de objetivos explicativos.
+
+En la tercera parte del curso (Eje III), se abordarán técnicas de aprendizaje no supervisado, como el clustering y la reducción de dimensionalidad. Los/as estudiantes aplicarán estas técnicas para analizar datos no etiquetados, con aplicaciones concretas a problemas en las Ciencias del Comportamiento.
+
+En la cuarta parte del curso (Eje IV), se introducirán nociones de procesamiento de lenguaje natural (NLP) con modelos de lenguaje grandes (LLMs), con énfasis en aplicaciones a problemas del comportamiento.
+
+A lo largo de la materia, los conocimientos serán complementados con lo aprendido en otras asignaturas del eje temático "Data Science", como Metodología de la Investigación, Estadística y Evaluación de Impacto, que permitirán a los/as estudiantes desarrollar una comprensión integral y aplicada del análisis de datos en las Ciencias del Comportamiento.
+
+---
+
+## Contenidos
+
+**Eje I: Procesamiento y visualización de datos.** Fundamentos de Python para el análisis de datos (tipos y estructuras de datos, funciones) y entorno de trabajo en Google Colab. Análisis exploratorio de datos en Python. Manejo de valores atípicos y datos faltantes. Limpieza, transformación y preparación de datos para análisis posteriores. Visualización con matplotlib y seaborn. Reportes reproducibles en Jupyter Notebook. Aplicaciones prácticas a casos de estudio en Ciencias del Comportamiento.
+
+**Eje II: Aprendizaje supervisado.** Conceptos fundamentales: clasificación vs. regresión, predicción vs. explicación. Train/test split, validación cruzada, bootstrap. Regresión lineal con regularización (Ridge, Lasso). Regresión logística. Árboles de decisión. Random Forest y ensambles. Evaluación de modelos predictivos: sensibilidad, especificidad, AUC. Análisis de series temporales. Aplicaciones de estos métodos a problemas en las Ciencias del Comportamiento.
+
+**Eje III: Aprendizaje no supervisado.** Técnicas de clustering: K-means y clustering jerárquico. Reducción de dimensionalidad: análisis de componentes principales (PCA). Aplicaciones prácticas a estudios en Ciencias del Comportamiento.
+
+**Eje IV: Procesamiento de lenguaje natural.** Aplicaciones de modelos de lenguaje grandes (LLMs) al análisis de texto: embeddings, análisis de sentimiento, clasificación, extracción de información. Aplicaciones a problemas en las Ciencias del Comportamiento.
+
+---
+
+## Modalidad de trabajo
+
+El curso se dictará en modalidad teórico-práctica de 3 horas, los sábados de 9:30 a 12:30 hs, del 8 de agosto al 7 de noviembre de 2026. La parte teórica estará orientada a la presentación de conceptos clave y metodologías relacionadas con el análisis de datos y su aplicación en las Ciencias del Comportamiento. Se promoverá la participación activa a través de discusiones en clase, análisis de casos y la lectura previa del material obligatorio indicado en el programa.
+
+La parte práctica estará enfocada en el uso de Python (y/o R) para la manipulación de datos, la creación de reportes y la aplicación de modelos predictivos. El material de cada clase incluirá notebooks de Jupyter como soporte principal, y se proveerán versiones traducidas a R como material de referencia para quienes se sientan más cómodos con ese lenguaje. Durante estas sesiones, los/as estudiantes trabajarán de manera individual y grupal en actividades prácticas que refuercen los conceptos vistos en las clases teóricas. Los trabajos prácticos grupales se realizarán en equipos de 2 a 3 integrantes, donde cada grupo aplicará las técnicas vistas en clase a un caso real, desarrollando un informe que incluirá el análisis de datos y la presentación de resultados.
+
+La asistencia a las clases es obligatoria y se espera que los/as estudiantes mantengan un 75% de asistencia mínima, tal como lo establece el reglamento de la universidad.
+
+Los recursos del curso (clases, presentaciones, consignas de actividades prácticas, etc.) y el cronograma serán publicados en el Campus Virtual ([http://campusvirtual.udesa.edu.ar](http://campusvirtual.udesa.edu.ar)).
+
+### Uso de modelos de lenguaje y agentes de IA
+
+Se permite el uso de modelos de lenguaje grandes (LLMs) y agentes de IA como herramientas de asistencia para la programación, siempre que medie el entendimiento del código y los resultados entregados. La responsabilidad sobre las decisiones metodológicas y la interpretación de los resultados es del/la estudiante, independientemente de las herramientas utilizadas en el proceso.
+
+### Mecanismos de evaluación
+
+La distribución del peso de las instancias evaluativas será la siguiente:
+
+**Trabajo práctico integrador (50%):** Los/as estudiantes trabajarán en grupos de 2 a 3 integrantes para aplicar técnicas de análisis de datos a un problema real en Ciencias del Comportamiento. La cátedra ofrecerá un menú de datasets sugeridos, y los grupos también podrán proponer un dataset propio sujeto a aprobación. Cada grupo deberá presentar un manuscrito escrito y un póster con presentación oral, justificando cada decisión metodológica. Este trabajo será evaluado en dos instancias: una entrega intermedia (20%) y una entrega final (30%).
+
+**Examen final (50%):** El examen final será teórico-práctico e incluirá preguntas sobre los conceptos presentados a lo largo del curso, así como ejercicios aplicados de análisis de datos. El examen deberá ser aprobado con una calificación mínima de 4 sobre 10 para considerar la materia aprobada.
+
+### Cálculo de nota final
+
+La nota final de la materia se calculará ponderando las siguientes instancias evaluativas:
+
+- Trabajo práctico integrador (entrega intermedia y final): 50%
+- Examen final: 50%
+
+La aprobación de la materia estará condicionada a:
+
+- Aprobar el trabajo práctico integrador y el examen final con una nota igual o superior a 4.
+- Mantener un 75% de asistencia en clases teóricas y prácticas, conforme a las normativas institucionales.
+
+---
+
+## Programa
+
+#### Clase 1: Presentación de la asignatura e introducción al machine learning
+
+**Objetivo:** Presentar la asignatura, motivar el rol del machine learning en las Ciencias del Comportamiento y establecer las bases conceptuales para el desarrollo del curso.
+
+**Contenidos:**
+
+- Contexto y relevancia de la asignatura en el campo de estudio.
+- Repaso del programa: temas principales, metodología de trabajo y cronograma de clases.
+- Modalidad de evaluación: criterios y expectativas.
+- Presentación de los objetivos generales del trabajo práctico integrador.
+- Introducción al machine learning: aprendizaje a partir de datos, tipos de problemas, predicción vs. explicación.
+- Articulación con Estadística para las Ciencias del Comportamiento: qué herramientas se asumen como base.
+- Puesta en marcha del entorno de trabajo: Google Colab (ejecución de notebooks, celdas de código y texto, importación de librerías, carga de archivos).
+- Fundamentos de Python para análisis de datos: variables y tipos, estructuras (listas, diccionarios), control de flujo (for, condicionales) y funciones.
+
+**Práctica:** Recorrido por ejemplos paradigmáticos del uso de ciencia de datos en problemas reales de las Ciencias del Comportamiento (people analytics, predicción de turnover, segmentación de usuarios, análisis de texto en redes sociales). Además, primer contacto con Google Colab y con los fundamentos de Python a través de un notebook guiado.
+
+**Lectura obligatoria:**
+
+James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to Statistical Learning with Applications in Python* (Capítulo 1). Springer. [https://www.statlearning.com/](https://www.statlearning.com/)
+
+### Eje I: Procesamiento y visualización de datos en Python (Clases 2 y 3)
+
+#### Clase 2: Análisis exploratorio y procesamiento de datos
+
+**Objetivo:** Introducir los fundamentos de Python para el análisis de datos y explorar conceptos fundamentales del análisis exploratorio de datos en Python, articulando lo visto en Estadística e introduciendo prácticas específicas necesarias para proyectos de machine learning.
+
+**Contenidos:**
+
+- Importación y exportación de datos (CSV, Excel, parquet).
+- Exploración inicial: tipos de datos, estructuras comunes, estadísticos descriptivos.
+- Limpieza y procesamiento de datos con pandas: filtrar, seleccionar, modificar, ordenar, renombrar, agrupar y resumir.
+- Manejo de datos atípicos (outliers) y valores faltantes (missing data).
+- Introducción a feature engineering: creación de variables derivadas con sentido sustantivo.
+- Terminología: distinción operativa entre limpieza, procesamiento, preprocesamiento, feature engineering y feature selection (ver Apéndice).
+
+**Práctica:** Se aplicarán técnicas para importar, explorar, limpiar y procesar datos.
+
+**Lectura obligatoria:**
+
+McKinney, W. (2022). *Python for Data Analysis* (3rd ed., Capítulos 5 a 7). O'Reilly Media. [https://wesmckinney.com/book/](https://wesmckinney.com/book/)
+
+**Lectura complementaria:**
+
+Wickham, H. & Grolemund, G. (2017). *R para Ciencia de Datos* (Capítulos 4 al 6). O'Reilly Media. [https://es.r4ds.hadley.nz/](https://es.r4ds.hadley.nz/) (material de referencia en R).
+
+#### Clase 3: Visualización de datos y reportes reproducibles
+
+**Objetivo:** Profundizar en los principios de visualización de datos y aprender a producir reportes reproducibles que comuniquen resultados de manera clara y profesional.
+
+**Contenidos:**
+
+- Cómo elegir la visualización adecuada para cada tipo de análisis y audiencia.
+- Visualización con matplotlib y seaborn: sintaxis, principales tipos de gráficos.
+- Gráficos compuestos, facetas y personalización (colores, etiquetas, escalas).
+- Reportes reproducibles con Jupyter Notebook y exportación a HTML/PDF.
+- Principios de visualización para storytelling con datos.
+
+**Práctica:** Se aplicarán las diferentes técnicas de visualización en datos reales. Además, se producirá un breve reporte reproducible que integre texto, código y resultados.
+
+**Lectura obligatoria:**
+
+Wilke, C. O. (2019). *Fundamentals of Data Visualization* (Capítulos 1 a 7, 21 y 22). O'Reilly Media. [https://clauswilke.com/dataviz/](https://clauswilke.com/dataviz/)
+
+**Lectura complementaria:**
+
+Knaflic, C. N. (2015). *Storytelling with Data: A data visualization guide for business professionals*. John Wiley & Sons.
+
+### Eje II: Aprendizaje supervisado (Clases 4 a 8)
+
+#### Clase 4: Introducción al aprendizaje supervisado
+
+**Objetivo:** Introducir los conceptos fundamentales del aprendizaje supervisado, las técnicas de resampling y el balance entre flexibilidad e interpretabilidad.
+
+**Contenidos:**
+
+- Tipos de problemas: clasificación vs. regresión.
+- Train/test split, validación cruzada (k-fold, leave-one-out), bootstrap.
+- Sesgo, varianza y la descomposición del error.
+- Balance entre flexibilidad e interpretabilidad.
+- Predicción vs. explicación causal: qué cambia en términos de validación, selección de variables e interpretación.
+
+**Práctica:** Se realizarán análisis de predicción y se explorarán con datos reales los conceptos error de entrenamiento y de testeo, sobreajuste, validación cruzada y el balance entre flexibilidad e interpretabilidad.
+
+**Lectura obligatoria:**
+
+James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to Statistical Learning with Applications in Python* (Capítulos 2 y 5). Springer. [https://www.statlearning.com/](https://www.statlearning.com/)
+
+**Lectura complementaria:**
+
+James, G., Witten, D., Hastie, T. & Tibshirani, R. (2021). *An Introduction to Statistical Learning with Applications in R* (2nd ed., Capítulos 2 y 5). Springer. (material de referencia en R).
+
+#### Clase 5: Regresión lineal y regularización
+
+**Objetivo:** Profundizar el uso de la regresión lineal con foco predictivo e introducir métodos de regularización (Ridge y Lasso).
+
+**Contenidos:**
+
+- Repaso breve de regresión lineal simple y múltiple (asumida desde Estadística).
+- Evaluación predictiva en test: MSE, RMSE, R² fuera de muestra.
+- Interacciones entre predictores e interpretación de coeficientes en contextos predictivos.
+- Regularización: motivación, Ridge, Lasso, elastic net.
+- Selección de hiperparámetros con validación cruzada.
+
+**Práctica:** Aplicar regresión lineal con y sin regularización a diferentes problemas. Además, se compararán los coeficientes y el desempeño predictivo entre los modelos.
+
+**Lectura obligatoria:**
+
+James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to Statistical Learning with Applications in Python* (Capítulos 3 y 6). Springer.
+
+**Lectura complementaria:**
+
+Hastie, T., Tibshirani, R. & Friedman, J. (2009). *The Elements of Statistical Learning* (Capítulo 6). Springer.
+
+#### Clase 6: Clasificación
+
+**Objetivo:** Aplicar métodos de clasificación para predecir variables cualitativas y comparar sus supuestos y desempeño.
+
+**Contenidos:**
+
+- Diferencias entre clasificación y regresión en contextos predictivos.
+- Regresión logística desde una perspectiva predictiva: estimación, umbral de decisión.
+- Métricas: matriz de confusión, accuracy, sensibilidad, especificidad, F1, AUC ROC.
+- Selección de umbrales y trade-offs en aplicaciones reales.
+- Consideraciones prácticas: desbalance de clases, calibración.
+
+**Práctica:** Se realizarán ejercicios de clasificación con fines explicativos y predictivos. También se trabajará la evaluación del modelo, el ajuste de umbrales y análisis de *trade-offs* entre interpretabilidad y desempeño.
+
+**Lectura obligatoria:**
+
+James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to Statistical Learning with Applications in Python* (Capítulo 4). Springer.
+
+#### Clase 7: Árboles de decisión y Random Forest
+
+**Objetivo:** Conocer y aplicar el algoritmo de árboles de decisión y el modelo Random Forest, analizando el compromiso entre explicabilidad y desempeño predictivo.
+
+**Contenidos:**
+
+- Estructura y algoritmos de árboles de decisión.
+- Técnicas de poda y manejo de sobreajuste.
+- Introducción a ensambles y reducción de varianza.
+- Random Forest: bagging, importancia de variables.
+- Comparación entre un árbol simple (interpretable) y un modelo de ensamble (más preciso).
+
+**Práctica:** Se aplicarán árboles de decisión y Random Forest en problemáticas reales, y se comparará la capacidad predictiva e interpretabilidad de ambos enfoques.
+
+**Lectura obligatoria:**
+
+James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to Statistical Learning with Applications in Python* (Capítulo 8). Springer.
+
+**Lectura complementaria:**
+
+Hastie, T., Tibshirani, R. & Friedman, J. (2009). *The Elements of Statistical Learning* (Capítulo 15: Random Forests). Springer.
+
+#### Clase 8: Series temporales
+
+**Objetivo:** Introducir el análisis de series temporales y modelos para predecir variables a lo largo del tiempo.
+
+**Contenidos:**
+
+- Características de las series temporales: tendencia, estacionalidad, ruido.
+- Descomposición y visualización de series temporales.
+- Modelos clásicos: medias móviles, modelos autorregresivos, ARIMA.
+- Validación de modelos en contextos temporales (sin data leakage).
+- Mención al análisis de supervivencia: modelado del tiempo hasta un evento (turnover, adherencia, recaída).
+
+**Práctica:** Analizar y predecir patrones temporales en una serie de datos relevantes para las Ciencias del Comportamiento (uso del transporte público, indicadores de salud mental ocupacional, o similar).
+
+**Lectura obligatoria:**
+
+Hyndman, R. J. & Athanasopoulos, G. (2021). *Forecasting: Principles and Practice* (3rd ed., Capítulos seleccionados). OTexts. [https://otexts.com/fpp3/](https://otexts.com/fpp3/)
+
+### Eje III: Aprendizaje no supervisado (Clases 9 y 10)
+
+#### Clase 9: Clustering: K-means y clustering jerárquico
+
+**Objetivo:** Comprender el aprendizaje no supervisado y su diferencia con el supervisado. Aplicar K-means y clustering jerárquico para segmentar datos.
+
+**Contenidos:**
+
+- Introducción al aprendizaje no supervisado.
+- Fundamentos del algoritmo K-means.
+- Clustering jerárquico: dendrogramas, decisiones de corte.
+- Implementación en Python y evaluación de resultados.
+- Criterios para la elección de K y comparación entre soluciones.
+
+**Práctica:** Aplicar K-means y clustering jerárquico para segmentar clientes según edad, ingreso anual y gastos. Perfilar los clusters resultantes y discutir su uso para decisiones basadas en datos de comportamiento de consumidores.
+
+**Lectura obligatoria:**
+
+James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to Statistical Learning with Applications in Python* (Capítulo 12). Springer.
+
+**Lectura complementaria:**
+
+Rokach, L. & Maimon, O. (2010). Clustering Methods. In *Data Mining and Knowledge Discovery Handbook* (pp. 321-352). Springer.
+
+#### Clase 10: Reducción de dimensionalidad
+
+**Objetivo:** Introducir técnicas de reducción de dimensionalidad, con foco en el análisis de componentes principales (PCA) y su utilidad en problemas de Ciencias del Comportamiento.
+
+**Contenidos:**
+
+- Motivación: alta dimensionalidad, ruido, visualización.
+- Análisis de componentes principales (PCA): intuición geométrica e interpretación.
+- Decisiones prácticas: estandarización, cantidad de componentes a retener.
+- Mención introductoria a otros métodos no lineales (t-SNE, UMAP).
+- Combinación de reducción de dimensionalidad con clustering.
+
+**Práctica:** Aplicar PCA a un dataset multivariado (escalas psicométricas, datos de encuestas o consumos culturales) y combinarlo con clustering para identificar perfiles latentes de comportamiento.
+
+**Lectura obligatoria:**
+
+James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to Statistical Learning with Applications in Python* (Capítulo 12). Springer.
+
+### Eje IV: Procesamiento de lenguaje natural (Clases 11 y 12)
+
+#### Clase 11: NLP con modelos de lenguaje (parte I): embeddings, sentimiento y clasificación
+
+**Objetivo:** Introducir herramientas modernas de procesamiento de lenguaje natural basadas en modelos de lenguaje, con foco en aplicaciones a problemas del comportamiento.
+
+**Contenidos:**
+
+- Panorama de NLP: de bag-of-words a transformers.
+- Embeddings de palabras y de oraciones.
+- Análisis de sentimiento y clasificación de texto con modelos pre-entrenados.
+- Uso de APIs y librerías (Hugging Face, sentence-transformers).
+- Buenas prácticas y limitaciones (sesgos, alucinaciones, interpretabilidad).
+
+**Práctica:** Analizar un corpus de texto relevante para Ciencias del Comportamiento (comentarios en redes sociales, respuestas abiertas de encuestas) aplicando análisis de sentimiento y clasificación temática con modelos pre-entrenados.
+
+#### Clase 12: NLP con modelos de lenguaje (parte II): aplicaciones avanzadas
+
+**Objetivo:** Aplicar modelos de lenguaje a tareas más complejas relevantes para investigación y práctica en Ciencias del Comportamiento.
+
+**Contenidos:**
+
+- Extracción estructurada de información a partir de texto libre.
+- Resumen automático y reformulación.
+- Introducción a retrieval-augmented generation (RAG) y su uso en investigación.
+- Discusión: validez, replicabilidad y reproducibilidad cuando se usan LLMs como herramienta de análisis.
+
+**Práctica:** Construir un pipeline simple que combine extracción de información estructurada y/o un sistema RAG sobre un corpus específico (e.g. entrevistas, papers, respuestas abiertas).
+
+### Evaluación (Clases 13 y 14)
+
+#### Clase 13: Examen final
+
+**Objetivo:** Evaluar los contenidos brindados durante el curso mediante un examen.
+
+**Contenido:**
+
+- Examen final teórico-práctico.
+
+#### Clase 14: Presentación del trabajo práctico integrador
+
+**Objetivo:** Integrar todo lo aprendido a lo largo del curso a través de la presentación del trabajo práctico integrador.
+
+**Contenidos:**
+
+- Presentación oral de los trabajos prácticos integradores ante docentes y compañeros/as.
+- Discusión grupal, devolución y conclusiones del curso.
+
+---
+
+## Apéndice: glosario de terminología
+
+A lo largo del curso utilizaremos los siguientes términos con sentidos diferenciados. Esta distinción es importante porque la literatura suele usarlos de manera ambigua, y trabajar con un vocabulario común facilita la discusión metodológica.
+
+**Datos crudos (raw data):** la fuente original, intactos.
+
+**Limpieza (cleaning):** operaciones para corregir errores, duplicados, tipos de datos, fechas imposibles, valores faltantes obvios. Es una etapa operativa y, en gran medida, mecánica.
+
+**Procesamiento (processing):** término paraguas para la manipulación general de datos (filtrar, agrupar, joinear, resumir). En Python, las operaciones típicas con pandas.
+
+**Preprocesamiento (preprocessing):** transformaciones que pide el algoritmo (estandarizar, codificar variables categóricas, imputar faltantes, balancear clases). Cambia si cambia el modelo.
+
+**Feature engineering:** creación de variables nuevas con sentido sustantivo (ratios, edad desde fecha de nacimiento, interacciones). La justificación es el contexto, no el algoritmo.
+
+**Feature selection:** elección de qué variables entran al modelo. La justificación es sustantiva: el problema y la teoría, no únicamente criterios estadísticos.

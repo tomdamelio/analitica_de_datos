@@ -1,0 +1,68 @@
+/*-- scss:defaults --*/
+// ---------------------------------------------------------------------------
+// theme/udesa.scss — tema Quarto de la materia
+// ⚠️ PLACEHOLDER navy sobrio (no hay branding oficial en context/brand/).
+// Los valores espejan theme/tokens.yml (fuente única de verdad): si se cambia
+// la paleta allá, actualizar acá.
+// ---------------------------------------------------------------------------
+
+$primary: #00529B;          // navy sobrio
+$primary-dark: #122535;
+$accent: #C0492F;           // dorado apagado
+$body-color: #212529;
+$body-bg: #FFFFFF;
+$surface: #F5F7FA;
+
+$link-color: $primary;
+$navbar-bg: $primary;
+$navbar-fg: #FFFFFF;
+$footer-bg: $surface;
+
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-family-monospace: "Cascadia Code", "Fira Code", Consolas, monospace;
+
+$toc-color: $primary;
+$code-block-bg: $surface;
+$code-color: $primary-dark;
+
+/*-- scss:rules --*/
+
+h1, h2, h3 {
+  color: $primary-dark;
+}
+
+h1 {
+  border-bottom: 2px solid rgba($accent, 0.45);
+  padding-bottom: 0.3rem;
+}
+
+a:hover {
+  color: $accent;
+}
+
+.navbar .navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+// Tablas sobrias
+table {
+  font-size: 0.95em;
+  thead {
+    background-color: $surface;
+    color: $primary-dark;
+  }
+}
+
+// Badges de Colab alineados con el texto
+img[alt="Open in Colab"] {
+  vertical-align: middle;
+}
+
+// Callouts con el acento de la paleta
+.callout-note {
+  border-left-color: $primary;
+}
+.callout-tip {
+  border-left-color: $accent;
+}

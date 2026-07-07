@@ -1,0 +1,33 @@
+# --- Material de autoría privado: NUNCA se versiona ni se publica ---
+context/
+
+# --- Build de Quarto ---
+# OJO: _freeze/ SÍ se versiona (freeze: auto ejecuta local y publica congelado)
+_site/
+.quarto/
+/.quarto/
+*_files/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- R ---
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# --- SO / editores ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# --- Archivos con sufijo _1 (copias de descarga, ya normalizadas) ---
+CONVENTIONS_1.md
+
+**/*.quarto_ipynb
