@@ -41,18 +41,11 @@ autoría** (quedan con outputs guardados); Quarto no las re-ejecuta.
 
 ## Publicación
 
-Push a `main` dispara `.github/workflows/publish.yml` (render + deploy a GitHub Pages
-+ sincronización del espejo de notebooks). Configurar una sola vez:
-
-1. **Settings → Pages → Source: GitHub Actions**. El repo es privado, pero el sitio
-   publicado es público.
-2. **Espejo público de notebooks** (necesario porque Colab no abre notebooks de repos
-   privados; los badges apuntan al espejo):
-   - Crear el repo **público** `tomdamelio/analitica-de-datos-notebooks` (vacío).
-   - Crear un fine-grained PAT con permiso *Contents: Read and write* **solo** sobre
-     ese repo, y guardarlo en este repo como secret `NOTEBOOKS_MIRROR_TOKEN`.
-   - El job `mirror-notebooks` copia las `.ipynb` (misma ruta) en cada push. Nunca
-     copia `data/` ni `context/`.
+Push a `main` dispara `.github/workflows/publish.yml` (render + deploy a GitHub
+Pages). Pages ya está configurado (Source: GitHub Actions). El repo es **público**
+(decisión de cátedra 2026-07-07: Pages en repos privados requiere plan pago, y el
+sitio ya publica todo el material); los badges de Colab apuntan directo a este repo.
+`context/` (material con copyright) sigue fuera del repo vía `.gitignore`.
 
 ## Cambiar owner/repo/rama (badges de Colab)
 

@@ -4,12 +4,12 @@
 # Si el repo cambia de nombre/dueño/rama, editar SOLO este archivo y re-renderizar.
 # Las notebooks .ipynb llevan la URL ya resuelta (no leen variables Quarto):
 # al cambiar esto, regenerar sus badges con el mismo valor.
-# Los badges apuntan al ESPEJO PUBLICO de notebooks (el repo principal es privado
-# y Colab solo abre notebooks de repos publicos). El workflow de publicacion
-# sincroniza las notebooks al espejo en cada push (job mirror-notebooks).
-colab-owner-repo: "tomdamelio/analitica-de-datos-notebooks"
+# El repo es PUBLICO (decision de catedra 2026-07-07: GitHub Pages en repos
+# privados requiere plan pago, y el sitio ya publica todo el material). Los
+# badges de Colab apuntan directo a este repo.
+colab-owner-repo: "tomdamelio/analitica_de_datos"
 colab-branch: "main"
 # Raíz compuesta para badges "Open in Colab":
-colab-root: "https://colab.research.google.com/github/tomdamelio/analitica-de-datos-notebooks/blob/main"
+colab-root: "https://colab.research.google.com/github/tomdamelio/analitica_de_datos/blob/main"
 # URL del sitio publicado (GitHub Pages):
 site-url: "https://tomdamelio.github.io/analitica_de_datos"
