@@ -40,3 +40,6 @@ desktop.ini
 CONVENTIONS_1.md
 
 **/*.quarto_ipynb
+
+# --- Generado por el pre-render (scripts/gen_mapa.py) ---
+_mapa_programa.qmd

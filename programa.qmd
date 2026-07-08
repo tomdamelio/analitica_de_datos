@@ -5,69 +5,9 @@ toc-depth: 4
 toc-expand: true
 ---
 
-<div class="mapa-curso" role="img" aria-label="Recorrido del semestre: la Clase 1 de introducción, luego los cuatro ejes de la materia con sus clases, y al final la evaluación en las clases 13 y 14.">
-
-<div class="mapa-etapa mapa-hito">
-<div class="mapa-cab">Inicio</div>
-<ul class="mapa-clases">
-<li><b>Clase 1</b> Presentación e introducción al machine learning</li>
-</ul>
-</div>
-
-<div class="mapa-flecha">&rarr;</div>
-
-<div class="mapa-etapa mapa-eje-1">
-<div class="mapa-cab">Eje I: Procesamiento y visualización de datos</div>
-<ul class="mapa-clases">
-<li><a href="clases/clase-02/index.html"><b>Clase 2</b> Análisis exploratorio y procesamiento</a></li>
-<li><b>Clase 3</b> Visualización y reportes reproducibles</li>
-</ul>
-</div>
-
-<div class="mapa-flecha">&rarr;</div>
-
-<div class="mapa-etapa mapa-eje-2">
-<div class="mapa-cab">Eje II: Aprendizaje supervisado</div>
-<ul class="mapa-clases">
-<li><b>Clase 4</b> Introducción al aprendizaje supervisado</li>
-<li><b>Clase 5</b> Regresión lineal y regularización</li>
-<li><b>Clase 6</b> Clasificación</li>
-<li><b>Clase 7</b> Árboles de decisión y Random Forest</li>
-<li><b>Clase 8</b> Series temporales</li>
-</ul>
-</div>
-
-<div class="mapa-flecha">&rarr;</div>
-
-<div class="mapa-etapa mapa-eje-3">
-<div class="mapa-cab">Eje III: Aprendizaje no supervisado</div>
-<ul class="mapa-clases">
-<li><b>Clase 9</b> Clustering (K-means y jerárquico)</li>
-<li><b>Clase 10</b> Reducción de dimensionalidad (PCA)</li>
-</ul>
-</div>
-
-<div class="mapa-flecha">&rarr;</div>
-
-<div class="mapa-etapa mapa-eje-4">
-<div class="mapa-cab">Eje IV: Procesamiento de lenguaje natural (NLP)</div>
-<ul class="mapa-clases">
-<li><b>Clase 11</b> Embeddings, sentimiento y clasificación</li>
-<li><b>Clase 12</b> Aplicaciones avanzadas y RAG</li>
-</ul>
-</div>
-
-<div class="mapa-flecha">&rarr;</div>
-
-<div class="mapa-etapa mapa-hito">
-<div class="mapa-cab">Evaluación</div>
-<ul class="mapa-clases">
-<li><b>Clase 13</b> Examen final escrito</li>
-<li><b>Clase 14</b> Defensa del trabajo práctico integrador</li>
-</ul>
-</div>
-
-</div>
+<!-- Mapa del curso: lo genera scripts/gen_mapa.py (pre-render) enlazando cada
+     clase que ya tiene pagina. No editar aca; ver ese script. -->
+{{< include _mapa_programa.qmd >}}
 
 ## Objetivos de aprendizaje
 
