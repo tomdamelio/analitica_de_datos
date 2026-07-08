@@ -5,8 +5,9 @@ toc-depth: 4
 toc-expand: true
 ---
 
-<!-- Mapa del curso: lo genera scripts/gen_mapa.py (pre-render) enlazando cada
-     clase que ya tiene pagina. No editar aca; ver ese script. -->
+<!-- Mapa del curso: lo genera scripts/gen_mapa.py (regenerado en el deploy, y a mano
+     con `python scripts/gen_mapa.py`) enlazando cada clase que ya tiene pagina.
+     No editar el include a mano; editar la estructura en ese script. -->
 {{< include _mapa_programa.qmd >}}
 
 ## Objetivos de aprendizaje

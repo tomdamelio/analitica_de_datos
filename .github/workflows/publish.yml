@@ -42,6 +42,11 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Regenera el mapa del Programa enlazando las clases que ya tienen página.
+      # Va ANTES del render porque Quarto expande los includes al armar el proyecto.
+      - name: Generar mapa del Programa
+        run: python scripts/gen_mapa.py
+
       - name: Render del sitio (freeze, sin ejecutar código)
         run: quarto render
 

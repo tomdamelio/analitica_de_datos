@@ -1,9 +1,6 @@
 project:
   type: website
   output-dir: _site
-  # Genera el mapa del Programa enlazando las clases que ya tienen pagina
-  pre-render:
-    - scripts/gen_mapa.py
   render:
     - "*.qmd"
     - "clases/**/*.qmd"

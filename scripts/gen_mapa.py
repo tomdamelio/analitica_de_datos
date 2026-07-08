@@ -1,8 +1,12 @@
 #!/usr/bin/env python
-"""Pre-render de Quarto: genera _mapa_programa.qmd (el mapa del curso de la
-pagina Programa) enlazando automaticamente cada clase que YA tiene pagina propia
-en clases/clase-NN/index.qmd. Se ejecuta en cada render (local y CI), asi que al
-sumar una clase en fases siguientes su link aparece solo, sin tocar programa.qmd.
+"""Genera _mapa_programa.qmd (el mapa del curso de la pagina Programa) enlazando
+automaticamente cada clase que YA tiene pagina propia en clases/clase-NN/index.qmd.
+
+Se corre en el workflow de publicacion ANTES de `quarto render` (Quarto expande los
+includes al armar el proyecto, antes de cualquier pre-render), asi que en produccion
+el mapa siempre refleja las clases existentes. Al agregar una clase en fases
+siguientes, correr `python scripts/gen_mapa.py` para actualizar la copia versionada
+(o dejar que el CI lo regenere en el deploy).
 """
 import os
 from pathlib import Path
