@@ -80,8 +80,8 @@ img[alt="Open in Colab"] {
   padding-bottom: 0.5rem;
 }
 .mapa-curso .mapa-etapa {
-  flex: 1 0 auto;
-  width: 178px;
+  flex: 1 1 0;
+  min-width: 132px;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -92,7 +92,8 @@ img[alt="Open in Colab"] {
   box-shadow: 0 1px 4px rgba(18, 37, 53, 0.08);
 }
 .mapa-curso .mapa-hito {
-  width: 150px;
+  flex-grow: 0.8;
+  min-width: 118px;
   --mapa-color: #{$primary-dark};
   background: $surface;
   justify-content: center;
