@@ -74,77 +74,72 @@ img[alt="Open in Colab"] {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  gap: 0.1rem;
-  margin: 1.2rem 0 2.5rem;
-  overflow-x: auto;
-  padding-bottom: 0.5rem;
+  gap: 0;
+  margin: 1.3rem 0 2.5rem;
 }
 .mapa-curso .mapa-etapa {
   flex: 1 1 0;
-  min-width: 132px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border: 1px solid rgba(18, 37, 53, 0.12);
-  border-top: 5px solid var(--mapa-color, #{$primary});
-  border-radius: 10px;
-  padding: 0.7rem 0.75rem;
-  box-shadow: 0 1px 4px rgba(18, 37, 53, 0.08);
+  border: 1px solid #d7dee4;
+  border-top: none;
 }
-.mapa-curso .mapa-hito {
-  flex-grow: 0.8;
-  min-width: 118px;
-  --mapa-color: #{$primary-dark};
-  background: $surface;
-  justify-content: center;
-}
+.mapa-curso .mapa-hito { --mapa-color: #{$primary-dark}; }
 .mapa-curso .mapa-cab {
+  background: var(--mapa-color, #{$primary});
+  color: #fff;
   font-weight: 600;
-  color: var(--mapa-color, #{$primary});
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-  font-size: 0.9rem;
+  font-size: 0.76rem;
+  line-height: 1.22;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  align-items: center;
+  min-height: 3.4em;
 }
 .mapa-curso .mapa-hito .mapa-cab {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #6b7a86;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 0.68rem;
 }
 .mapa-curso .mapa-clases {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+  flex: 1;
 }
 .mapa-curso .mapa-clases li {
-  background: rgba(18, 37, 53, 0.035);
-  border: 1px solid rgba(18, 37, 53, 0.12);
-  border-radius: 8px;
-  padding: 0.3rem 0.55rem;
-  font-size: 0.8rem;
-  line-height: 1.35;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  color: #3a4750;
+  border-top: 1px solid #edf0f2;
 }
+.mapa-curso .mapa-clases li:first-child { border-top: none; }
 .mapa-curso .mapa-clases li b {
   display: block;
   color: var(--mapa-color, #{$primary});
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 0.73rem;
 }
 .mapa-curso .mapa-flecha {
   flex: 0 0 auto;
   align-self: center;
-  color: #b6c2cc;
-  font-size: 1.5rem;
-  line-height: 1;
-  padding: 0 0.05rem;
+  color: #aab6bf;
+  font-size: 0.95rem;
+  padding: 0 0.18rem;
 }
 .mapa-curso .mapa-eje-1 { --mapa-color: #00529B; }
 .mapa-curso .mapa-eje-2 { --mapa-color: #C0492F; }
 .mapa-curso .mapa-eje-3 { --mapa-color: #1F7A4D; }
 .mapa-curso .mapa-eje-4 { --mapa-color: #6A4C93; }
+
+// En pantallas angostas el flujo pasa a vertical (legible en celular)
+@media (max-width: 680px) {
+  .mapa-curso { flex-direction: column; align-items: stretch; }
+  .mapa-curso .mapa-flecha { transform: rotate(90deg); padding: 0.15rem 0; }
+}
 
 // Imagen de portada del home, pegada al subtitulo (margen casi nulo arriba).
 // Se scopea al home via :has() para no afectar el espaciado de otras paginas.

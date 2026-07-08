@@ -5,7 +5,6 @@ toc-depth: 4
 toc-expand: true
 ---
 
-::: {.column-page}
 <div class="mapa-curso" role="img" aria-label="Recorrido del semestre: la Clase 1 de introducción, luego los cuatro ejes de la materia con sus clases, y al final la evaluación en las clases 13 y 14.">
 
 <div class="mapa-etapa mapa-hito">
@@ -69,7 +68,6 @@ toc-expand: true
 </div>
 
 </div>
-:::
 
 ## Objetivos de aprendizaje
 
