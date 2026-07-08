@@ -21,6 +21,15 @@ venv/
 .RData
 .Ruserdata
 
+# --- LaTeX/Beamer (artefactos de compilación de las slides; el .pdf y .tex SÍ se versionan) ---
+*.aux
+*.log
+*.nav
+*.snm
+*.toc
+*.vrb
+*.synctex.gz
+
 # --- SO / editores ---
 .DS_Store
 Thumbs.db

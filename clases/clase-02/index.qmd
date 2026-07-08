@@ -49,7 +49,8 @@ es material de referencia equivalente.
 
 ## Slides
 
-*Disponibles próximamente.* <!-- PLACEHOLDER Fase 2: slides/clase02.pdf -->
+[**Diapositivas de la clase (PDF)**](slides/clase02.pdf){target="_blank"} — recorren todo el
+contenido teórico; la práctica va en las notebooks de arriba.
 
 ## Lecturas
 
