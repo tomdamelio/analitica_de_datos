@@ -256,6 +256,19 @@ df.shape                  # (1470, 35): filas x columnas
     \end{itemize}
 \end{frame}
 
+% -- Importar y exportar formatos --
+\begin{frame}[fragile]{Importar y exportar: CSV, Excel, parquet}
+\begin{lstlisting}
+df = pd.read_csv(url)             # tambien read_excel(...), read_parquet(...)
+df.to_csv("hr.csv", index=False)  # guardar: to_excel(...), to_parquet(...)
+\end{lstlisting}
+    \begin{itemize}
+        \item Por cada \texttt{read\_*} hay un \texttt{to\_*}: cargar y guardar son \textbf{sim\'etricas}.
+        \item \textbf{CSV} (universal), \textbf{Excel} (planillas), \textbf{parquet} (columnar: r\'apido y liviano para datos grandes).
+        \item \texttt{read\_csv} tiene par\'ametros para archivos sucios: \texttt{sep}, \texttt{na\_values}, \texttt{usecols}, \texttt{encoding}.
+    \end{itemize}
+\end{frame}
+
 % -- A la notebook (Ejercicio 1) --
 \begin{frame}{}
     \vfill
@@ -351,6 +364,19 @@ df["Attrition"].value_counts()    # No: 1233 | Yes: 237
     \end{center}
     \vfill
     {\footnotesize El filtro es una \textbf{m\'ascara booleana}: \texttt{df["OverTime"] == "Yes"} da una columna de True/False, y \texttt{df[mascara]} se queda con las filas True.}
+\end{frame}
+
+% -- Seleccionar con loc / iloc --
+\begin{frame}[fragile]{Seleccionar con \texttt{loc} e \texttt{iloc}}
+\begin{lstlisting}
+df.loc[df["OverTime"]=="Yes", ["JobRole","MonthlyIncome"]]  # por etiqueta
+df.iloc[:5, :3]                                             # por posicion (desde 0)
+df["Age"]                                                   # es una Series
+\end{lstlisting}
+    \begin{itemize}
+        \item \texttt{loc}: por \textbf{etiqueta} (nombres, \'indice). \texttt{iloc}: por \textbf{posici\'on} entera (desde 0).
+        \item Una sola columna es una \textbf{Series} (un vector 1D con \'indice), el bloque con el que se arma el DataFrame.
+    \end{itemize}
 \end{frame}
 
 % -- Limpieza estructural --
