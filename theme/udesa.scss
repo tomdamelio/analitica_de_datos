@@ -123,6 +123,16 @@ img[alt="Open in Colab"] {
   font-weight: 700;
   font-size: 0.73rem;
 }
+// Clase con página propia: link que hereda el color, con hover
+.mapa-curso .mapa-clases li a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+.mapa-curso .mapa-clases li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--mapa-color, #{$primary});
+}
 .mapa-curso .mapa-flecha {
   flex: 0 0 auto;
   align-self: center;

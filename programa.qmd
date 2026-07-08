@@ -19,7 +19,7 @@ toc-expand: true
 <div class="mapa-etapa mapa-eje-1">
 <div class="mapa-cab">Eje I: Procesamiento y visualización de datos</div>
 <ul class="mapa-clases">
-<li><b>Clase 2</b> Análisis exploratorio y procesamiento</li>
+<li><a href="clases/clase-02/index.html"><b>Clase 2</b> Análisis exploratorio y procesamiento</a></li>
 <li><b>Clase 3</b> Visualización y reportes reproducibles</li>
 </ul>
 </div>

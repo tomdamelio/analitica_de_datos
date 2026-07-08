@@ -49,8 +49,7 @@ es material de referencia equivalente.
 
 ## Slides
 
-[**Diapositivas de la clase (PDF)**](slides/clase02.pdf){target="_blank"} — recorren todo el
-contenido teórico; la práctica va en las notebooks de arriba.
+[**Diapositivas de la clase (PDF)**](slides/clase02.pdf){target="_blank"}
 
 ## Lecturas
 
