@@ -72,67 +72,73 @@ img[alt="Open in Colab"] {
 // -------------------------------------------------------------------
 .mapa-curso {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1.2rem auto 2.5rem;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0.1rem;
+  margin: 1.2rem 0 2.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
 }
 .mapa-curso .mapa-etapa {
-  width: 100%;
-  max-width: 700px;
+  flex: 1 0 auto;
+  width: 178px;
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border: 1px solid rgba(18, 37, 53, 0.12);
-  border-left: 6px solid var(--mapa-color, #{$primary});
+  border-top: 5px solid var(--mapa-color, #{$primary});
   border-radius: 10px;
-  padding: 0.75rem 1.05rem;
+  padding: 0.7rem 0.75rem;
   box-shadow: 0 1px 4px rgba(18, 37, 53, 0.08);
 }
 .mapa-curso .mapa-hito {
-  max-width: 480px;
-  text-align: center;
+  width: 150px;
   --mapa-color: #{$primary-dark};
   background: $surface;
+  justify-content: center;
 }
 .mapa-curso .mapa-cab {
   font-weight: 600;
   color: var(--mapa-color, #{$primary});
-  margin-bottom: 0.4rem;
-  line-height: 1.25;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-size: 0.9rem;
 }
 .mapa-curso .mapa-hito .mapa-cab {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #6b7a86;
-  margin-bottom: 0.25rem;
+  text-align: center;
 }
 .mapa-curso .mapa-clases {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-.mapa-curso .mapa-hito .mapa-clases {
-  justify-content: center;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 .mapa-curso .mapa-clases li {
   background: rgba(18, 37, 53, 0.035);
   border: 1px solid rgba(18, 37, 53, 0.12);
-  border-radius: 999px;
-  padding: 0.2rem 0.75rem;
-  font-size: 0.85rem;
-  line-height: 1.5;
+  border-radius: 8px;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.8rem;
+  line-height: 1.35;
 }
 .mapa-curso .mapa-clases li b {
+  display: block;
   color: var(--mapa-color, #{$primary});
   font-weight: 600;
 }
 .mapa-curso .mapa-flecha {
+  flex: 0 0 auto;
+  align-self: center;
   color: #b6c2cc;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1;
-  margin: 0.2rem 0;
+  padding: 0 0.05rem;
 }
 .mapa-curso .mapa-eje-1 { --mapa-color: #00529B; }
 .mapa-curso .mapa-eje-2 { --mapa-color: #C0492F; }

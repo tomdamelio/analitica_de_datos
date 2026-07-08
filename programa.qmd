@@ -9,10 +9,12 @@ toc-expand: true
 
 <div class="mapa-etapa mapa-hito">
 <div class="mapa-cab">Inicio</div>
-<b>Clase 1</b>: Presentación e introducción al machine learning
+<ul class="mapa-clases">
+<li><b>Clase 1</b> Presentación e introducción al machine learning</li>
+</ul>
 </div>
 
-<div class="mapa-flecha">&darr;</div>
+<div class="mapa-flecha">&rarr;</div>
 
 <div class="mapa-etapa mapa-eje-1">
 <div class="mapa-cab">Eje I: Procesamiento y visualización de datos</div>
@@ -22,7 +24,7 @@ toc-expand: true
 </ul>
 </div>
 
-<div class="mapa-flecha">&darr;</div>
+<div class="mapa-flecha">&rarr;</div>
 
 <div class="mapa-etapa mapa-eje-2">
 <div class="mapa-cab">Eje II: Aprendizaje supervisado</div>
@@ -35,7 +37,7 @@ toc-expand: true
 </ul>
 </div>
 
-<div class="mapa-flecha">&darr;</div>
+<div class="mapa-flecha">&rarr;</div>
 
 <div class="mapa-etapa mapa-eje-3">
 <div class="mapa-cab">Eje III: Aprendizaje no supervisado</div>
@@ -45,7 +47,7 @@ toc-expand: true
 </ul>
 </div>
 
-<div class="mapa-flecha">&darr;</div>
+<div class="mapa-flecha">&rarr;</div>
 
 <div class="mapa-etapa mapa-eje-4">
 <div class="mapa-cab">Eje IV: Procesamiento de lenguaje natural (NLP)</div>
@@ -55,7 +57,7 @@ toc-expand: true
 </ul>
 </div>
 
-<div class="mapa-flecha">&darr;</div>
+<div class="mapa-flecha">&rarr;</div>
 
 <div class="mapa-etapa mapa-hito">
 <div class="mapa-cab">Evaluación</div>
