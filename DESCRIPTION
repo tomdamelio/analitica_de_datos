@@ -12,5 +12,6 @@ Imports:
     arrow,
     IRkernel,
     Rtsne,
-    umap
+    umap,
+    plotly
 Encoding: UTF-8

@@ -10,6 +10,11 @@ pyarrow==24.0.0
 scikit-learn==1.9.0
 scipy==1.18.0
 umap-learn==0.5.12
+# Graficos interactivos de la Clase 10 (3D de PCA) y sus widgets
+plotly==6.9.0
+ipywidgets==8.1.8
+# Solo para autoria: exporta el PNG estatico del 3D que usan las slides
+kaleido==1.3.0
 # Ejecución de notebooks y render Quarto
 jupyter==1.1.1
 ipykernel==7.3.0
