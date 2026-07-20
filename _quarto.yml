@@ -28,6 +28,8 @@ website:
         menu:
           - href: clases/clase-02/index.qmd
             text: "Clase 2: Análisis exploratorio y procesamiento de datos"
+          - href: clases/clase-10/index.qmd
+            text: "Clase 10: Reducción de dimensionalidad"
     right:
       # Logo UdeSA en blanco (derivado del SVG oficial; ver theme/) -> Campus Virtual
       - text: '<img src="/theme/udesa-logo-blanco.png" alt="Campus Virtual UdeSA" style="height:24px; vertical-align:middle;">'

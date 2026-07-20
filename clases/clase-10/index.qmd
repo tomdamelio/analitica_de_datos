@@ -1,0 +1,73 @@
+---
+title: "Clase 10: Reducción de dimensionalidad"
+subtitle: "Eje III: Aprendizaje no supervisado"
+---
+
+## Objetivo
+
+Introducir las técnicas de reducción de dimensionalidad, con foco en el análisis de
+componentes principales (PCA) y su utilidad en problemas de Ciencias del Comportamiento.
+
+## Contenidos
+
+- Motivación: alta dimensionalidad, ruido, visualización.
+- Análisis de componentes principales (PCA): intuición geométrica e interpretación.
+- Decisiones prácticas: estandarización, cantidad de componentes a retener.
+- Mención introductoria a otros métodos no lineales (t-SNE, UMAP).
+- Combinación de reducción de dimensionalidad con clustering.
+
+::: {.callout-note}
+## PCA sigue de cerca el capítulo 12 del libro
+
+La clase está construida sobre las secciones 12.1 y 12.2 de ISLP, con la intuición inicial
+tomada de la sección 6.3.1. El recorrido va de la intuición en dos dimensiones (la recta de
+máxima varianza, que es también la recta más cercana a los puntos) al caso de muchas
+variables, e incluye la reconstrucción de un dato a partir de sus componentes, la lectura
+completa de un biplot y la conexión entre varianza explicada y $R^2$.
+:::
+
+## Notebooks
+
+La explicación se apoya de punta a punta en un dataset real de **deserción y éxito
+académico** (4424 estudiantes de educación superior). El resultado que ordena la clase:
+sin usar en ningún momento la etiqueta de deserción, la primera componente principal
+resulta ser un **eje de riesgo académico** que separa a quienes desertan de quienes se
+gradúan. El **ejercicio de cierre** aplica todo lo visto al dataset de **rotación de
+personal (attrition)** que se viene usando desde la Clase 2, combinando PCA con clustering
+para descubrir perfiles latentes de empleados.
+
+| Dataset | Dónde se usa | Fuente |
+|---|---|---|
+| Deserción y éxito académico | Secciones 1 a 5 (toda la explicación) | [UCI, dataset 697](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success) (CC BY 4.0) |
+| HR Employee Attrition | Ejercicio de cierre | [IBM](https://github.com/IBM/employee-attrition-aif360) |
+
+: Ver la [ficha completa de ambos datasets](https://github.com/tomdamelio/analitica_de_datos/blob/main/data/README.md) con licencias y diccionario de variables.
+
+| Lenguaje | Leer en el sitio | Ejecutar en Colab |
+|---|---|---|
+| **Python** (principal) | [Notebook renderizada](notebooks/clase10_python.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]({{< var colab-root >}}/clases/clase-10/notebooks/clase10_python.ipynb) |
+| **R** (par validado) | [Notebook renderizada](notebooks/clase10_r.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]({{< var colab-root >}}/clases/clase-10/notebooks/clase10_r.ipynb) |
+
+::: {.callout-tip}
+Las dos notebooks recorren **el mismo análisis con las mismas conclusiones**: elegí el
+lenguaje en el que quieras trabajar. La versión Python es la del dictado; la versión R
+es material de referencia equivalente.
+:::
+
+## Slides
+
+*Las diapositivas de la clase se publican acá antes del dictado.*
+
+## Lecturas
+
+**Obligatoria:**
+
+- James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). *An Introduction to
+  Statistical Learning with Applications in Python*, **capítulo 12**. Springer.
+  [statlearning.com](https://www.statlearning.com/) (gratuito, oficial).
+
+**Complementaria (referencia en R):**
+
+- James, G., Witten, D., Hastie, T. & Tibshirani, R. (2021). *An Introduction to Statistical
+  Learning with Applications in R* (2ª ed.), **capítulo 12**. Springer.
+  [statlearning.com](https://www.statlearning.com/) (gratuito, oficial).

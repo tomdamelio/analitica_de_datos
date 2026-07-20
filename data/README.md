@@ -4,6 +4,32 @@
 > acá. Las notebooks cargan los datos desde una **URL pública estable** (el repo es
 > privado, su raw no sirve para Colab); la copia local es para autoría/render.
 
+## `student_dropout.csv` — deserción y éxito académico (Clase 10)
+
+**Predict Students' Dropout and Academic Success** — dataset real de una institución de
+educación superior (Portugal), recopilado por Realinho, Vieira Martins, Machado & Baptista
+(2021) con fines de investigación sobre deserción estudiantil.
+
+| Campo | Valor |
+|---|---|
+| Dimensiones | 4.424 filas × 37 columnas (1 fila = 1 estudiante) |
+| Variable objetivo | `Target` (Dropout 1.421 / Graduate 2.209 / Enrolled 794) |
+| Faltantes | 0 |
+| Fuente primaria | UCI Machine Learning Repository, dataset **id 697** ([enlace](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)) |
+| **URL de carga en notebooks** | `https://archive.ics.uci.edu/static/public/697/predict+students+dropout+and+academic+success.zip` (archivo `data.csv`, separador `;`) |
+| Licencia | **CC BY 4.0** (permite uso y redistribución con atribución) |
+| Descargado | 2026-07-19 |
+| Se usa en | Clase 10 (PCA: motivación, intuición 2D/3D, biplot, escalado, scree) |
+
+**Uso pedagógico en la Clase 10.** Es la base de datos que acompaña toda la explicación de
+PCA. Sobre su bloque de variables académicas numéricas (materias inscriptas/aprobadas y notas
+por semestre, nota de admisión, edad), PC1 explica ~54% de la varianza y separa nítidamente a
+quienes desertan de quienes se gradúan: la primera componente resulta ser un eje de riesgo
+académico. El ejercicio de cierre de la clase aplica el método a `hr_attrition.csv`, que los
+estudiantes ya conocen. La cita de atribución (CC BY 4.0): Realinho, V., Vieira Martins, M.,
+Machado, J. & Baptista, L. (2021). *Predict Students' Dropout and Academic Success*. UCI ML
+Repository. https://doi.org/10.24432/C5MC89
+
 ## `hr_attrition.csv` — dataset espina (clases 2–7 y 9–10)
 
 **IBM HR Analytics Employee Attrition & Performance** — dataset ficticio creado por

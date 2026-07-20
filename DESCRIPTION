@@ -10,5 +10,7 @@ Imports:
     readxl,
     writexl,
     arrow,
-    IRkernel
+    IRkernel,
+    Rtsne,
+    umap
 Encoding: UTF-8
