@@ -56,7 +56,7 @@ es material de referencia equivalente.
 
 ## Slides
 
-*Las diapositivas de la clase se publican acá antes del dictado.*
+[**Diapositivas de la clase (PDF)**](slides/clase10.pdf){target="_blank"}
 
 ## Lecturas
 
