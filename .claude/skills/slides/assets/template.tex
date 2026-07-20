@@ -1,0 +1,264 @@
+%----------------------------------------------------------------------------------------
+%    Plantilla del skill "slides" (deck Beamer plot-centrico)
+%    Theme: SimpleDarkBlue (https://github.com/pm25/SimpleDarkBlue-BeamerTheme)
+%    con PRIMARIO institucional + paleta tab20c por bloque, navegacion de circulos,
+%    logo institucional y enlaces a notebooks. Todo lo que va [ENTRE CORCHETES] se rellena.
+%
+%    Copiar a la carpeta de salida junto con los 4 .sty del theme. Rellenar portada,
+%    color primario, logo (opcional) y URL base de notebooks (opcional).
+%    Idioma: cambiar [spanish] de babel a [english] si el deck va en ingles.
+%----------------------------------------------------------------------------------------
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimpleDarkBlue}
+\useoutertheme[subsection=false]{miniframes}   % navegacion de circulos (uno por slide)
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noshorthands]{babel}    % es-noshorthands: que " no rompa en codigo/tablas
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{tikz}
+
+% --- FUENTE: Helvetica (cambiar por la institucional si corresponde) ---
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% GOTCHA (Windows/MiKTeX/TinyTeX): kpathsea a veces NO encuentra imagenes en
+% subcarpetas o con ciertos nombres. Lo robusto: dejar las imagenes en la MISMA
+% carpeta del .tex y referenciarlas por nombre pelado (sin "assets/"). Si una figura
+% "no aparece", renombrarla a algo simple (p.ej. fig_x.png) y recompilar.
+\graphicspath{{./}}
+
+%----------------------------------------------------------------------------------------
+%    COLORES: primario institucional + secundarios tab20c (uno por bloque)
+%----------------------------------------------------------------------------------------
+\definecolor{primary}{HTML}{00529B}   % [COLOR INSTITUCIONAL] (portada, apertura, cierre, logo)
+\definecolor{ink}{HTML}{122535}
+% Paleta tab20c: un color por bloque (separacion mental fuerte)
+\definecolor{tabBlue}{HTML}{3182BD}
+\definecolor{tabOrange}{HTML}{E6550D}
+\definecolor{tabOrangeLL}{HTML}{FDD0A2}
+\definecolor{tabGreen}{HTML}{31A354}
+\definecolor{tabGreenLL}{HTML}{C7E9C0}
+\definecolor{tabPurple}{HTML}{756BB1}
+\definecolor{tabGray}{HTML}{636363}
+\definecolor{tabGrayL}{HTML}{969696}
+\definecolor{blockBodyBg}{HTML}{ECECEC}
+
+\setbeamercolor{structure}{fg=primary}
+\setbeamercolor{title}{bg=primary,fg=white}
+\setbeamercolor{frametitle}{bg=primary,fg=white}
+\setbeamercolor{block title}{fg=white,bg=primary}
+\setbeamercolor{block body}{fg=black,bg=blockBodyBg}
+\setbeamercolor{block title example}{fg=white,bg=tabGreen}
+\setbeamercolor{block body example}{fg=black,bg=tabGreenLL}
+\setbeamercolor{block title alerted}{fg=white,bg=tabOrange}
+\setbeamercolor{block body alerted}{fg=black,bg=tabOrangeLL}
+\setbeamercolor{alerted text}{fg=tabOrange}
+\setbeamercolor{itemize item}{fg=primary}
+\setbeamercolor{itemize subitem}{fg=primary}
+\setbeamercolor{enumerate item}{fg=primary}
+
+% --- Tematizacion por bloque: la BARRA de titulo toma el color del bloque ---
+% Llamar \bloque{tabBlue} (etc.) ANTES de cada grupo de slides. \navytheme para
+% apertura/cierre (barra en el primario institucional).
+\newcommand{\bloque}[1]{%
+    \setbeamercolor{frametitle}{bg=#1,fg=white}%
+    \setbeamercolor{structure}{fg=#1}%
+    \setbeamercolor{alerted text}{fg=#1}%
+    \setbeamercolor{itemize item}{fg=#1}%
+    \setbeamercolor{itemize subitem}{fg=#1}%
+    \setbeamercolor{enumerate item}{fg=#1}%
+}
+\newcommand{\navytheme}{\bloque{primary}}
+
+%----------------------------------------------------------------------------------------
+%    CODIGO (listings). Comentarios/strings sin acentos para no romper con inputenc.
+%----------------------------------------------------------------------------------------
+\lstdefinestyle{code}{%
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{primary}\bfseries,
+    commentstyle=\color{tabGray}\itshape,
+    stringstyle=\color{tabGreen},
+    showstringspaces=false,
+    backgroundcolor=\color{blockBodyBg},
+    frame=none, xleftmargin=0.6em, framexleftmargin=0.6em,
+    breaklines=true, columns=fullflexible, keepspaces=true,
+    aboveskip=0.5em, belowskip=0.3em,
+}
+\lstset{style=code}
+
+%----------------------------------------------------------------------------------------
+%    LOGO INSTITUCIONAL (opcional). Dejar dos PNG en la carpeta del deck:
+%      logo-color.png  -> a color, para la portada (fondo blanco)
+%      logo-white.png  -> en blanco, para la barra de titulo (fondo de color)
+%    Si NO hay logo, borrar el \includegraphics de las dos plantillas de abajo.
+%----------------------------------------------------------------------------------------
+% Barra de titulo con logo blanco arriba a la derecha
+\setbeamertemplate{frametitle}{%
+    \nointerlineskip
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.7ex,dp=1.3ex,leftskip=0.4cm,rightskip=0.4cm]{frametitle}%
+        \usebeamerfont{frametitle}\insertframetitle%
+        \hfill\raisebox{-0.2ex}{\includegraphics[height=2.1ex]{logo-white.png}}%
+    \end{beamercolorbox}%
+}
+% OJO: el titulo va en UNA linea (si es largo choca con el logo). Mantenerlo <= ~55 car.
+
+% Portada: logo a color arriba, luego el bloque de titulo (subtitulo mas grande,
+% autor en negrita, fecha mas chica)
+\titlegraphic{\includegraphics[width=0.27\textwidth]{logo-color.png}}
+\makeatletter
+\setbeamertemplate{title page}{%
+    \vspace{2.0em}\begingroup\centering
+    {\inserttitlegraphic\par}\vskip2.0em
+    \begin{beamercolorbox}[sep=10pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}\inserttitle\par%
+        \ifx\insertsubtitle\@empty\else%
+        \vskip0.4em{\large\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+        \fi%
+    \end{beamercolorbox}%
+    \vskip1.2em\par
+    {\large\textbf{\insertauthor}\par}\vskip0.25em{\small\insertdate\par}%
+    \endgroup\vfill
+}
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%    NAVEGACION: un circulo por slide, agrupados por bloque (\section), en el footer.
+%    Solo el bloque ACTUAL toma color (nombre + circulos); los demas, gris hueco.
+%    El footer aparece recien con el primer \section (la apertura queda limpia).
+%----------------------------------------------------------------------------------------
+\AtBeginSection{}                  % \section NO genera una slide automatica
+\setbeamertemplate{headline}{}     % sin barra arriba: la navegacion va en el footer
+\setbeamercolor{mini frame}{fg=gray!55, bg=white}
+\setbeamercolor{mini frame in current subsection}{use=structure, fg=structure.fg, bg=structure.fg!30}
+\setbeamercolor{mini frame in other subsection}{fg=gray!55, bg=white}
+\setbeamercolor{section in head/foot}{fg=gray!60}
+\setbeamercolor{subsection in head/foot}{fg=gray!60}
+\setbeamertemplate{footline}{%
+    \ifnum\insertsectionnumber>0%
+        \vskip2pt%
+        \hbox to\paperwidth{\hskip0.5cm\raisebox{0.2ex}{\insertnavigation{\dimexpr\paperwidth-1cm\relax}}\hss}%
+        \vskip3pt%
+    \fi%
+}
+
+% --- Enlace a la notebook (logo Colab clickeable). URL base = [OWNER/REPO/BRANCH]. ---
+% El \newcommand pre-tokeniza los "_": por eso el \href va INLINE en cada uso, no aca.
+% Uso: \colab{clase02_python.ipynb}{\includegraphics[height=7ex]{colab_logo.png}}
+% (escribir el \href completo inline, ver ejemplos en el cuerpo).
+
+%----------------------------------------------------------------------------------------
+%    PORTADA  (rellenar)
+%----------------------------------------------------------------------------------------
+\title{[Clase N]:\\ \textbf{[Titulo de la clase]}}
+\subtitle{[Nombre de la materia]}
+\author{[Programa / afiliacion]}
+\date{[Fecha]}
+
+\begin{document}
+
+%======================= APERTURA (barra en el primario) =======================
+\navytheme
+
+% -- Portada: [plain] para que NO tenga footer/navegacion --
+\begin{frame}[plain]\titlepage\end{frame}
+
+% -- Pregunta / mensaje de fondo (grande, centrado). Opcional: una figura/preview. --
+\begin{frame}{}
+    \vfill\begin{center}
+        {\Large [La pregunta de fondo de la clase]}\\[0.7em]
+        {\footnotesize [Una linea de contexto]}%
+        % \\[0.9em]\includegraphics[width=0.95\linewidth]{[preview].png}
+    \end{center}\vfill
+\end{frame}
+
+% -- Roadmap (los N bloques). Cierre con el enlace a la practica. --
+\begin{frame}{De qu\'e vamos a hablar hoy}
+    \begin{block}{Objetivo}[Objetivo en una o dos frases.]\end{block}
+    \begin{enumerate}
+        \item \textbf{[Bloque 1].} [una linea]
+        \item \textbf{[Bloque 2].} [una linea]
+        \item \textbf{[Bloque 3].} [una linea]
+        \item \textbf{[Bloque 4].} [una linea]
+    \end{enumerate}
+    \vfill\begin{center}{\normalsize Para las pr\'acticas vamos a ir a~%
+        \href{https://colab.research.google.com/github/[OWNER/REPO/BRANCH]/[ruta]/[nb]_python.ipynb}{%
+        \raisebox{-0.32\height}{\includegraphics[height=3.4ex]{colab_logo.png}}~\textbf{Colab}}.}\end{center}
+\end{frame}
+
+%========================================================================================
+%    BLOQUE 1 (azul). Patron por bloque: \section + \bloque{color} + divisor + contenido.
+%    Colores sugeridos: 1=tabBlue, 2=tabOrange, 3=tabGreen, 4=tabPurple.
+%========================================================================================
+\section{[Bloque 1]}
+\bloque{tabBlue}
+
+% -- Divisor: plano, etiqueta de color + nombre del bloque (sin barra) --
+\begin{frame}{}
+    \vfill\begin{center}
+        {\small\textbf{\color{tabBlue}BLOQUE 1 DE 4}}\\[0.5em]
+        {\Large\textbf{[Nombre del bloque]}}\\[0.8em]
+        {\normalsize [Una linea que enmarca el bloque.]}
+    \end{center}\vfill
+\end{frame}
+
+% -- PATRON A: una figura (titulo = el mensaje; recortar el suptitle con crop_suptitle.py) --
+\begin{frame}{[Titular: la conclusion, con lo clave en \textbf{negrita}]}
+    \centering
+    \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{[figura]_notitle.png}\\
+    {\footnotesize [leyenda corta y fiel a los numeros]}
+\end{frame}
+
+% -- PATRON B: codigo (frame [fragile]) --
+\begin{frame}[fragile]{[Concepto]}
+\begin{lstlisting}
+# comentarios sin acentos
+x = 42
+\end{lstlisting}
+    \begin{itemize}
+        \item [idea 1]
+        \item [idea 2, con \alert{acento} en el color del bloque]
+    \end{itemize}
+\end{frame}
+
+% -- PATRON C: dos figuras lado a lado, una leyenda bajo cada una --
+\begin{frame}{[Titular]}
+    \begin{columns}[t]
+        \column{0.5\textwidth}\centering
+        \includegraphics[width=\linewidth,height=0.68\textheight,keepaspectratio]{[izq].png}\\[0.4em]
+        {\footnotesize [leyenda izq]}
+        \column{0.5\textwidth}\centering
+        \includegraphics[width=\linewidth,height=0.68\textheight,keepaspectratio]{[der].png}\\[0.4em]
+        {\footnotesize [leyenda der]}
+    \end{columns}
+\end{frame}
+
+% -- Puntero a la notebook (TAREA, no contenido). Logo Colab clickeable, centrado. --
+\begin{frame}{}
+    \vfill\begin{center}
+        \href{https://colab.research.google.com/github/[OWNER/REPO/BRANCH]/[ruta]/[nb]_python.ipynb}{%
+            \includegraphics[height=7ex]{colab_logo.png}}\\[0.6em]
+        {\Large\textbf{A la notebook}}\\[0.6em]
+        {\normalsize \textbf{Ejercicio N:} [que se practica].}\\[0.4em]
+        {\footnotesize [en Python o en R].}
+    \end{center}\vfill
+\end{frame}
+
+%========================================================================================
+%    (repetir BLOQUE 2 con \section{...}\bloque{tabOrange}, 3 con tabGreen, 4 con tabPurple)
+%========================================================================================
+
+%======================= CIERRE (barra en el primario) =======================
+\section{Cierre}
+\navytheme
+
+\begin{frame}{[Lo que nos llevamos]}
+    \begin{block}{[Recap]}[que quedaron sabiendo hacer]\end{block}
+    \textbf{[El hallazgo, en una frase:]} [...]
+    \vfill{\footnotesize [lo que viene la proxima clase]}
+\end{frame}
+
+\end{document}
