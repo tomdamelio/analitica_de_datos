@@ -1,0 +1,34 @@
+{
+  "skill_name": "slides-html",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Quiero armar en HTML una mini-clase (15-18 slides) sobre 'Regresión lineal simple' para el mismo curso de Analítica de Datos (UdeSA). Quiero: portada, 2 bloques temáticos con su portada de bloque cada uno, un widget donde se pueda mover la pendiente de una recta y ver en vivo cómo cambia la suma de errores al cuadrado (podés generar datos ficticios pero razonables vos mismo con numpy y una semilla fija, no hace falta bajar un dataset real), y una fórmula (y = b0 + b1*x + error) que se vaya revelando término por término con la flecha del teclado, cada término con su propio color. Guardalo todo en una carpeta nueva llamada 'clase-regresion'.",
+      "expected_output": "Una carpeta 'clase-regresion' con comun.py/interactivos.py/contenido_*.py/build_todo.py y un HTML final autocontenido: portada + 2 portadas de bloque + 15-18 slides totales, un widget de recta arrastrable con medidor de error en vivo, y una fórmula que revela sus 3 términos (b0, b1, x/error) con la flecha derecha, cada uno en un color distinto.",
+      "files": [],
+      "assertions": [
+        {"text": "El HTML final es un solo archivo autocontenido (sin <script src> ni <link> a CDN externo)", "type": "grep_absent", "pattern": "(script src=\"http|link.*href=\"http)"},
+        {"text": "Tiene entre 15 y 18 slides (<section class=\"slide\")", "type": "count_range", "pattern": "<section class=\"slide", "min": 15, "max": 18},
+        {"text": "Hay 2 portadas de bloque distintas (bloque-nombre)", "type": "count_range", "pattern": "bloque-nombre", "min": 2, "max": 2},
+        {"text": "El widget de pendiente usa geometría/SVG o Plotly real, no una imagen estática", "type": "grep_present", "pattern": "(<svg|Plotly.newPlot)"},
+        {"text": "La fórmula usa el mecanismo de revelado por flecha de teclado (no un botón dedicado)", "type": "grep_present", "pattern": "__fpAvanzar"},
+        {"text": "Los 3 términos de la fórmula usan colores distintos entre sí (grep de al menos 3 hex distintos cerca de htmlClass/textcolor)", "type": "manual"},
+        {"text": "El agente verificó en un navegador real (no solo headless) antes de reportar éxito", "type": "manual"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Necesito una presentación HTML para mi equipo de trabajo (no es una clase) explicando cómo pensamos nuestro proceso de onboarding de clientes en 4 etapas. No hay datos numéricos, es conceptual. Quiero que cada etapa tenga su color y que, en la slide de resumen del proceso completo, se vaya revelando etapa por etapa con la flecha del teclado (como si fuera una fórmula que se explica de a partes, pero con texto en vez de símbolos matemáticos). No quiero widgets con gráficos ni nada de eso, es simple pero prolijo y profesional, con una paleta de azules corporativos (no la paleta multicolor de un curso). Guardalo en una carpeta nueva llamada 'onboarding-deck'.",
+      "expected_output": "Una carpeta 'onboarding-deck' con un HTML autocontenido, sin ningún widget de gráfico (sin Plotly, sin SVG de datos), con paleta de azules, y una slide que revela las 4 etapas del proceso con la flecha del teclado reutilizando el patrón de 'fórmula por pasos' pero para texto en vez de símbolos matemáticos.",
+      "files": [],
+      "assertions": [
+        {"text": "El HTML final es autocontenido (sin CDN externo)", "type": "grep_absent", "pattern": "(script src=\"http|link.*href=\"http)"},
+        {"text": "NO incluye Plotly (el usuario pidió explícitamente nada de gráficos)", "type": "grep_absent", "pattern": "Plotly"},
+        {"text": "Usa el mecanismo de revelado por flecha de teclado para las 4 etapas", "type": "grep_present", "pattern": "__fpAvanzar"},
+        {"text": "La paleta no es la académica de 6 colores por defecto (no aparecen los 6 hex de comun.py sin cambios)", "type": "manual"},
+        {"text": "Las 4 etapas tienen colores/identidad visual distinguibles entre sí", "type": "manual"},
+        {"text": "El deck se ve 'profesional/corporativo', no como una clase universitaria (juicio cualitativo)", "type": "manual"}
+      ]
+    }
+  ]
+}
