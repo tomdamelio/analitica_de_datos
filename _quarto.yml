@@ -8,6 +8,7 @@ project:
     - "!context/"
   resources:
     - theme/udesa-logo-blanco.png
+    - CNAME
 
 lang: es
 

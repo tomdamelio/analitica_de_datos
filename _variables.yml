@@ -11,5 +11,5 @@ colab-owner-repo: "tomdamelio/analitica_de_datos"
 colab-branch: "main"
 # Raíz compuesta para badges "Open in Colab":
 colab-root: "https://colab.research.google.com/github/tomdamelio/analitica_de_datos/blob/main"
-# URL del sitio publicado (GitHub Pages):
-site-url: "https://tomdamelio.github.io/analitica_de_datos"
+# URL del sitio publicado (GitHub Pages, dominio propio):
+site-url: "https://analiticadedatos-udesa.com"
