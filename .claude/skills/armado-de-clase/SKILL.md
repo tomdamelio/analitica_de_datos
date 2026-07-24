@@ -1,6 +1,6 @@
 ---
 name: armado-de-clase
-description: Guia el armado completo de una clase de la materia Analitica de Datos (Maestria en Ciencias del Comportamiento, UdeSA), de punta a punta - notebooks en Python y R, pagina del sitio Quarto y diapositivas Beamer. Usala siempre que se vaya a preparar, armar, ampliar, corregir o cerrar una clase de esta materia, incluso si el docente solo dice "armemos la Clase N", "sigamos con la notebook", "ampliemos esta clase", "hagamos las slides" o menciona el programa de la materia. Define el ORDEN del proceso, los puntos donde hay que frenar a validar con el docente, y las trampas del repositorio que ya costaron retrabajo.
+description: Guia el armado completo de una clase de la materia Analitica de Datos (Maestria en Ciencias del Comportamiento, UdeSA), de punta a punta - notebooks en Python y R, pagina del sitio Quarto y diapositivas (HTML interactivo o Beamer/PDF, a eleccion del docente). Usala siempre que se vaya a preparar, armar, ampliar, corregir o cerrar una clase de esta materia, incluso si el docente solo dice "armemos la Clase N", "sigamos con la notebook", "ampliemos esta clase", "hagamos las slides" o menciona el programa de la materia. Define el ORDEN del proceso, los puntos donde hay que frenar a validar con el docente, y las trampas del repositorio que ya costaron retrabajo.
 ---
 
 # Armado de una clase
@@ -149,18 +149,33 @@ roto en el sitio publicado.
 
 ### 8. Slides  ·  CHECKPOINT
 
-Delega al skill **`slides`**, que define el tema Beamer institucional, la tematizacion por
-bloque y el diseno plot-centrico. Copia el tema y los logos de una clase ya armada.
+Antes de arrancar, **preguntale al docente que formato de slides quiere** — no lo decidas por tu
+cuenta ni asumas el mismo formato de la clase anterior:
 
-Lo propio de esta materia:
+- **HTML interactivo** (skill `slides-html`) — deck autocontenido para navegador, con widgets reales
+  (arrastrar una recta, rotar un plano 3D, comparar metodos, revelar una formula termino a termino) en
+  vez de solo texto y figuras estaticas. **Esta es la opcion recomendada por defecto**: para esta
+  materia (metodos que se entienden mejor viendolos moverse) la interaccion suele valer la pena, y
+  `clases/clase-10/slides-html/` ya es un ejemplo completo y probado para calibrarse. Si el docente no
+  tiene preferencia o no esta seguro, proponé esta.
+- **LaTeX/Beamer -> PDF** (skill `slides-latex`) — paginas fijas, sin interaccion; mejor si el docente
+  va a imprimir el material, prefiere el look institucional ya armado en Beamer, o no quiere depender
+  de un navegador durante la clase.
 
-- Las slides usan **las figuras reales que emitieron las notebooks**, no figuras nuevas.
-- Las slides cubren el **contenido teorico**; la practica vive en las notebooks. En cada
-  bloque, un puntero a Colab marca la tarea.
-- Los numeros de las slides salen del analisis ya validado. Si necesitas un numero que no
-  tenes a mano, recalculalo desde los datos; no lo estimes.
+Delega al skill que corresponda segun la respuesta. Los dos comparten la misma tematizacion por
+bloque y el mismo espiritu colaborativo (armar y parar, no todo de una).
 
-Compila, revisa el render y presenta el deck. Despues **iteran slide por slide** al ritmo del
+Lo propio de esta materia, para cualquiera de los dos formatos:
+
+- Las slides usan **las figuras/datos reales que emitieron las notebooks**, no figuras nuevas ni
+  numeros inventados. Si necesitas un numero que no tenes a mano, recalculalo desde los datos.
+- Las slides cubren el **contenido teorico**; la practica vive en las notebooks. En cada bloque, un
+  puntero a Colab marca la tarea.
+- **`slides-html`**: copiar `comun.py` de `clases/clase-10/slides-html/` como base (ya tiene la
+  identidad visual de la materia resuelta), no partir del starter kit generico de la skill.
+- **`slides-latex`**: copiar el tema y los logos de una clase ya armada en Beamer.
+
+Compila/genera, revisa el render y presenta el deck. Despues **iteran slide por slide** al ritmo del
 docente.
 
 ### 9. Cierre
@@ -173,9 +188,10 @@ publicado lo muestra.
 
 ## Los skills en los que se apoya
 
-`colab-class-notebook` (fase 5) y `slides` (fase 8) viven en `.claude/skills/` de este
-repositorio, versionados junto con la materia. Estan ahi para que los dos docentes trabajen
-sobre la misma version sin instalar nada: alcanza con clonar el repo.
+`colab-class-notebook` (fase 5) y, en la fase 8, **`slides-html`** (recomendada por defecto) o
+`slides-latex` (segun lo que elija el docente), viven en `.claude/skills/` de este repositorio,
+versionados junto con la materia. Estan ahi para que los dos docentes trabajen sobre la misma
+version sin instalar nada: alcanza con clonar el repo.
 
 Son skills genericos, asi que un docente puede tener ademas su copia personal en
 `~/.claude/skills/` para usarlos en otros proyectos. Para esta materia, **la version del repo

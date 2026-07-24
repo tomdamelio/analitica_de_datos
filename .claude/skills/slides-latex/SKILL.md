@@ -1,9 +1,9 @@
 ---
-name: slides
-description: Arma una presentacion Beamer plot-centrica (theme SimpleDarkBlue + Helvetica + paleta tab20c) a partir de un TEXTO dado y de contexto distribuido en varios archivos (figuras, datos, notas), de forma COLABORATIVA y slide por slide. Generica/standalone, sirve en cualquier proyecto. Triggers: /slides, "armar diapositivas", "armar slides", "presentacion en beamer", "pasar este texto a slides".
+name: slides-latex
+description: Arma una presentacion Beamer plot-centrica (theme SimpleDarkBlue + Helvetica + paleta tab20c) a partir de un TEXTO dado y de contexto distribuido en varios archivos (figuras, datos, notas), de forma COLABORATIVA y slide por slide. Genera PDF/LaTeX estatico (paginas fijas, sin interaccion) — para un deck HTML interactivo (widgets, animaciones, navegador) usar en cambio la skill `slides-html`. Generica/standalone, sirve en cualquier proyecto. Triggers: /slides-latex, "armar diapositivas en latex/beamer", "presentacion en beamer", "pasar este texto a slides en pdf".
 ---
 
-# Skill: slides
+# Skill: slides-latex
 
 Construye, **junto con el usuario y slide por slide**, una presentacion Beamer LaTeX a partir de:
 1. un **texto fuente** (el mensaje, las conclusiones o el contenido que se quiere presentar), y
@@ -20,12 +20,17 @@ solo cuando aclaran. Numeros siempre fieles a la fuente (CSV/tabla/texto), nunca
 > `research-session-slides`, atada a un pipeline o a convenciones de carpetas propias), usar esa
 > cuando aplique; esta sirve para cualquier texto+contexto.
 
+> **Relacion con `slides-html`:** misma filosofia colaborativa slide-por-slide, pero esta produce
+> LaTeX/Beamer -> PDF (paginas fijas, ideal para imprimir o proyectar sin depender de un navegador).
+> Si el usuario quiere **interaccion real** (widgets, animaciones, algo que corra en un browser),
+> usar `slides-html` en su lugar.
+
 ---
 
 ## Cuando se usa
 
-- Cuando el usuario invoca `/slides` o pide armar una presentacion/deck a partir de un texto y/o
-  de material disperso (figuras + datos + notas).
+- Cuando el usuario invoca `/slides-latex` o pide armar una presentacion/deck en LaTeX/Beamer/PDF a
+  partir de un texto y/o de material disperso (figuras + datos + notas).
 - **Un deck autocontenido** por presentacion.
 
 ## Inputs que hay que establecer al arrancar
