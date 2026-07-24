@@ -56,7 +56,7 @@ es material de referencia equivalente.
 
 ## Slides
 
-[**Diapositivas de la clase (PDF)**](slides/clase10.pdf){target="_blank"}
+[**Diapositivas de la clase**](slides-html/clase10_estatica_completa.html){target="_blank"} ([versión PDF](slides/clase10.pdf){target="_blank"})
 
 ## Lecturas
 
